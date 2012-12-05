@@ -62,6 +62,10 @@ Mastercontrol::Application.routes.draw do
 
   end
 
+  resources :job do
+
+  end
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
