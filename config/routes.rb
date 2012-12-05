@@ -1,5 +1,5 @@
 Mastercontrol::Application.routes.draw do
-  get "job/new"
+  post "job/new"
 
   get "job/create"
 
