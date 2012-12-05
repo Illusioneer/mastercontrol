@@ -45,14 +45,11 @@ class JobController < ApplicationController
     # POST /apis.json
     def create
 
-      params.delete("action")
-      params.delete("controller")
-      @job= Instance.new(params)
-
+      @job= Job.new(params[:job])
 
       respond_to do |format|
         if @job.save
-          format.json { render json: @api, status: :created, location: @job}
+          format.json { render json: @job, status: :created, location: @job}
         else
           format.html { render action: "new" }
           format.json { render json: @job.errors, status: :unprocessable_entity }
