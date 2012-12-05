@@ -1,4 +1,18 @@
 Mastercontrol::Application.routes.draw do
+  get "job/new"
+
+  get "job/create"
+
+  get "job/update"
+
+  get "job/save"
+
+  get "job/edit"
+
+  get "job/destory"
+
+  get "job/show"
+
   get "api/index"
 
   get "api/show"
