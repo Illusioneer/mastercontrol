@@ -1,5 +1,6 @@
 class JobController < ApplicationController
 
+  protect_from_forgery :except => :create
   skip_before_filter :verify_authenticity_token, :if => Proc.new { |c| c.request.format == 'application/json' }
 
     def index
@@ -47,15 +48,22 @@ class JobController < ApplicationController
     # POST /apis.json
     def create
 
-      @job= Job.new(params[:job])
+      @job = params['_json']
+      @job.each do |entry|
+        Job.new(entry)
+        p "Entry made!"
+      end
 
       respond_to do |format|
-        if @job.save
-          format.json { render json: @job, status: :created, location: @job}
-        else
-          format.html { render action: "new" }
-          format.json { render json: @job.errors, status: :unprocessable_entity }
-        end
+
+        format.json { p "GOT IT"}
+
+        #if @job.save
+#          format.json { render json: @job, status: :created, location: @job}
+#        else
+#          format.html { render action: "new" }
+#          format.json { render json: @job.errors, status: :unprocessable_entity }
+#        end
       end
     end
 
@@ -64,7 +72,7 @@ class JobController < ApplicationController
     def update
       #params[:author] = current_user.user_id
       @job= Job.find(params[:id])
-
+      
       respond_to do |format|
         if @job.update_attributes(params[:job])
           format.html { redirect_to api_path(@job.title_slug), notice: 'Api was successfully updated.' }

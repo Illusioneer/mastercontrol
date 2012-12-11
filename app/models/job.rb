@@ -2,19 +2,12 @@ class Job
   include Mongoid::Document
 
   field  :machine,  :type => String
-  field  :job,  :type => String
-  field  :status, :type => String, :default => "none"
-  field  :last_run, :type => Date,  :default => Time.now
-  field  :caption
-  field  :command
-  field  :description
-  field  :elapsedTime
-  field  :jobStatus
-  field  :name
-  field  :owner
-  field  :priority
-  field  :runRepeatedly
-  field  :startTime
-  field  :status
+  field  :Name,  :type => String
+  field  :Path,  :type => String
+  field  :Enabled,  :type => String
+  field  :State, :type => String, :default => "none"
+  field  :LastRunTime, :type => String, :default => "never"
+  field  :NextRunTime, :type => String, :default => "never"
+  field  :NumberOfMissedRuns, :type => String, :default => "none"
 
 end
