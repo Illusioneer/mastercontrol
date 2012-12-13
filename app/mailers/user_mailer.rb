@@ -6,7 +6,7 @@ class UserMailer < ActionMailer::Base
     @defaulted = "Bryan.Owens@harpercollins.com"
     @user = user
 
-    @joblist = Job.all("NextRunTime" < 24.hours.from_now)
+    @joblist = Job.where(:NextRunTime.lt => 1.day.from_now)
 
     mail(:to => @defaulted, :subject => "Welcome to My Awesome Site")
   end
