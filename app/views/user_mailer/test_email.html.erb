@@ -8,9 +8,26 @@
   </head>
   <body>
     <p>
-      Good morning <%@user%>
+      Good morning <%= @user%>
       At the time: <%= Time.now %> the check of active jobs was run, the results are:<br/>
     </p>
+
+    <table width="500" border="1">
+        <th>Name</th>
+        <th>State</th>
+        <th>Last Runtime</th>
+        <th>Next Runtime</th>
+        <th>Last Result</th>
+
+      <%joblist.each{|entry| %>
+      <tr>
+        <td><%= entry.Name%></td>
+        <td><%= entry.State%></td>
+        <td><%= entry.LastRunTime%></td>
+        <td><%= entry.NextRunTime%></td>
+        <td><%= entry.Definition%></td>
+      </tr>  <%}%>
+    </table>​
 
     <p>Thanks for joining and have a great day!</p>
   </body>

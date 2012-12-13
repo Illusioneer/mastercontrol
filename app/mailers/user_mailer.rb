@@ -5,6 +5,9 @@ class UserMailer < ActionMailer::Base
   def test_email(user)
     @defaulted = "Bryan.Owens@harpercollins.com"
     @user = user
+
+    @joblist = Job.all("NextRunTime" < 24.hours.from_now)
+
     mail(:to => @defaulted, :subject => "Welcome to My Awesome Site")
   end
 
