@@ -6,9 +6,9 @@ class Job
   field  :Path,  :type => String
   field  :Enabled,  :type => String
   field  :State, :type => String, :default => "none"
-  field  :LastRunTime, :type => String, :default => "never"
-  field  :NextRunTime, :type => String, :default => "never"
-  field  :NumberOfMissedRuns, :type => String, :default => "none"
+  field  :LastRunTime, :type => DateTime, :default => Time.now
+  field  :NextRunTime, :type => DateTime, :default => Time.now
+  field  :NumberOfMissedRuns, :type => Integer, :default => "none"
   field  :LastTaskResult, :type => String, :default => "failed"
   field  :Definition, :type => String, :default => "none"
 

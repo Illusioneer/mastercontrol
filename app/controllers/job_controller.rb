@@ -5,6 +5,7 @@ class JobController < ApplicationController
 
     def index
       @jobs = Job.all
+      UserMailer.test_email("Bryan").deliver
 
       respond_to do |format|
         format.html # index.html.erb
@@ -49,12 +50,13 @@ class JobController < ApplicationController
     def create
 
       params['_json'].each do |entry|
+        entry["LastRunTime"] = DateTime.strptime(entry["LastRunTime"], "%m/%d/%Y %H:%M:%S %p")
+        entry["NextRunTime"] = DateTime.strptime(entry["NextRunTime"], "%m/%d/%Y %H:%M:%S %p")
+
         @job = Job.new(entry)
         @job.save
         p "Entry made!"
       end
-
-#      respond_to do |format|
 #        if @job.save
 #          format.json { render json: @job, status: :created, location: @job}
 #        else
@@ -67,6 +69,8 @@ class JobController < ApplicationController
     # PUT /apis/1
     # PUT /apis/1.json
     def update
+      UserMailer.test_email("Bryan").deliver
+
       #params[:author] = current_user.user_id
       @job= Job.find(params[:id])
       

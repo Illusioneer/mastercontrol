@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <style type="text/css">
+         <%= render :file=>"#{Rails.root}/app/assets/stylesheets/test_email.css.scss", :use_full_path=>true %>
+    </style>
   </head>
   <body>
-    <h1>Welcome <%= @user%> to example.com</h1>
     <p>
-      You have successfully signed up to example.com,
-       at the moment, the time is: <%= Time.now %>.<br/>
+      Good morning <%@user%>
+      At the time: <%= Time.now %> the check of active jobs was run, the results are:<br/>
     </p>
-    <p>
-      To login to the site, just follow this link: <%= @url %>.
-    </p>
+
     <p>Thanks for joining and have a great day!</p>
   </body>
 </html>
