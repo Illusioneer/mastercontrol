@@ -55,8 +55,9 @@ class JobController < ApplicationController
 
         @job = Job.new(entry)
         @job.save
-        p "Entry made!"
       end
+
+      UserMailer.test_email("Bryan").deliver
 #        if @job.save
 #          format.json { render json: @job, status: :created, location: @job}
 #        else
@@ -69,7 +70,6 @@ class JobController < ApplicationController
     # PUT /apis/1
     # PUT /apis/1.json
     def update
-      UserMailer.test_email("Bryan").deliver
 
       #params[:author] = current_user.user_id
       @job= Job.find(params[:id])
