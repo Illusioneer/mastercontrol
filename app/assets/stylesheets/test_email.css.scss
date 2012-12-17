@@ -12,7 +12,11 @@ body {
     font-family: helvetica;
   }
 
-  table, td, tr {
+  table {
     background-color: #f5f5f5;
+
+    td {
+      width: auto;
+    }
   }
 }

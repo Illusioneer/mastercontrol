@@ -4,8 +4,6 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/job_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/job_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="job_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/job_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="12" selection-start="1203" selection-end="1212" vertical-scroll-proportion="0.0">
+            <state line="102" column="93" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,7 +56,7 @@
       <file leaf-file-name="test_email.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="79" selection-start="251" selection-end="251" vertical-scroll-proportion="0.24975514">
+            <state line="18" column="18" selection-start="266" selection-end="266" vertical-scroll-proportion="0.26444662">
               <folding />
             </state>
           </provider>
@@ -781,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/job_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="12" selection-start="1203" selection-end="1212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="59" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
@@ -802,9 +793,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/job_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="93" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="79" selection-start="251" selection-end="251" vertical-scroll-proportion="0.24975514">
+        <state line="18" column="18" selection-start="266" selection-end="266" vertical-scroll-proportion="0.26444662">
           <folding />
         </state>
       </provider>
