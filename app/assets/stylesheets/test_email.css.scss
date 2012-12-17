@@ -1,7 +1,7 @@
 #time {color:red}
 
 body {
-  background-color: #d3d3d3;
+  //background-color: whitesmoke;
   font-family: Tahoma;
   font-size:  12pt;
   color:  black;
@@ -10,5 +10,9 @@ body {
     color: blue;
     font-size: 10;
     font-family: helvetica;
+  }
+
+  table, td, tr {
+    background-color: #f5f5f5;
   }
 }

@@ -54,7 +54,8 @@ class JobController < ApplicationController
         entry["NextRunTime"] = DateTime.strptime(entry["NextRunTime"], "%m/%d/%Y %H:%M:%S %p")
 
         @job = Job.new(entry)
-        @job.save
+        @job.save unless entry["NextRunTime"].year < 1900
+
       end
 
       UserMailer.test_email("Bryan").deliver
