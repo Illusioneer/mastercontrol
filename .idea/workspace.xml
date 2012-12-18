@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
@@ -35,19 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_email.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="test_email.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="37" selection-start="801" selection-end="801" vertical-scroll-proportion="-17.5">
+            <state line="25" column="34" selection-start="700" selection-end="700" vertical-scroll-proportion="0.3633721">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_email.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test_email.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="0.22727273">
+            <state line="16" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,8 +100,8 @@
         <option value="$PROJECT_DIR$/app/models/job.rb" />
         <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/job_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb" />
       </list>
     </option>
   </component>
@@ -772,13 +771,6 @@
         <state line="4" column="0" selection-start="181" selection-end="198" vertical-scroll-proportion="0.056818184" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/job_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="93" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/job.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="62" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
@@ -793,16 +785,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="37" selection-start="801" selection-end="801" vertical-scroll-proportion="-17.5">
+        <state line="16" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/test_email.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/controllers/job_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="0.22727273">
+        <state line="102" column="93" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="700" selection-end="700" vertical-scroll-proportion="0.3633721">
           <folding />
         </state>
       </provider>
