@@ -14,7 +14,12 @@ body {
     background-color: lightgrey;
 
     td.failed {
+      background-color: pink;
       color: red;
+    }
+    td.passed {
+      background-color: lightgreen;
+      color: green;
     }
   }
 }

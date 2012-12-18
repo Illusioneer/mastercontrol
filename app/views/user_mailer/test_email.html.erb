@@ -22,7 +22,12 @@
       <%@joblist.each{|entry| %>
       <tr>
         <td><%= entry.Name%></td>
-        <td <%= entry.State ne 0 ? "class='failed'" : "class='passed'"%>><%= entry.State%></td>
+
+        <%if entry.LastTaskRun >= 0%>
+            <td class='failed'>FAILED</td>
+        <%else%>
+            <td class='passed'>PASSED</td>
+        <%end%>
         <td><%= entry.LastRunTime%></td>
         <td><%= entry.NextRunTime%></td>
         <td><%= entry.Definition%></td>
