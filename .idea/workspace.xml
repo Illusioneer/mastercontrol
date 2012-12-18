@@ -37,7 +37,7 @@
       <file leaf-file-name="test_email.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="34" selection-start="700" selection-end="700" vertical-scroll-proportion="0.3633721">
+            <state line="25" column="38" selection-start="704" selection-end="704" vertical-scroll-proportion="0.3633721">
               <folding />
             </state>
           </provider>
@@ -801,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user_mailer/test_email.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="700" selection-end="700" vertical-scroll-proportion="0.3633721">
+        <state line="25" column="38" selection-start="704" selection-end="704" vertical-scroll-proportion="0.3633721">
           <folding />
         </state>
       </provider>
