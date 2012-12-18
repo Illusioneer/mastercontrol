@@ -23,7 +23,7 @@
       <tr>
         <td><%= entry.Name%></td>
 
-        <%if entry.LastTaskResult.to_i >= 0%>
+        <%if entry.LastTaskResult.to_i != 0%>
             <td class='failed'>FAILED</td>
         <%else%>
             <td class='passed'>PASSED</td>
