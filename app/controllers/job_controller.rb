@@ -52,13 +52,14 @@ class JobController < ApplicationController
       params['_json'].each do |entry|
         entry["LastRunTime"] = DateTime.strptime(entry["LastRunTime"], "%m/%d/%Y %H:%M:%S %p")
         entry["NextRunTime"] = DateTime.strptime(entry["NextRunTime"], "%m/%d/%Y %H:%M:%S %p")
+	entry["LastTaskResult"] = entry["LastTaskResult"].to_i.abs
 
         @job = Job.new(entry)
         @job.save unless entry["NextRunTime"].year < 1900
 
       end
 
-      UserMailer.test_email("Bryan").deliver
+      UserMailer.test_email("Team").deliver
 #        if @job.save
 #          format.json { render json: @job, status: :created, location: @job}
 #        else

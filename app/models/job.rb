@@ -8,8 +8,8 @@ class Job
   field  :State, :type => String, :default => "none"
   field  :LastRunTime, :type => DateTime, :default => Time.now
   field  :NextRunTime, :type => DateTime, :default => Time.now
-  field  :NumberOfMissedRuns, :type => Integer, :default => "none"
-  field  :LastTaskResult, :type => String, :default => "failed"
+  field  :NumberOfMissedRuns, :type => Integer, :default => 0
+  field  :LastTaskResult, :type => Integer, :default => 0
   field  :Definition, :type => String, :default => "none"
 
 end
