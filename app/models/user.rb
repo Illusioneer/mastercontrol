@@ -1,9 +1,9 @@
-class User < ActiveRecord::Base
-
+class User
   include Mongoid::Document
-
-  field :user, :type => String
-
-
-
+  
+  validates_presence_of :userpass, :on => :create  
+  
+  field :userid, :type => String
+  field :useremail, :type => String
+  field :userpass, :type => String
 end
