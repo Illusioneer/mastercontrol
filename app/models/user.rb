@@ -6,4 +6,5 @@ class User
   field :userid, :type => String
   field :useremail, :type => String
   field :userpass, :type => String
+  field :usergroups, :type => Array
 end

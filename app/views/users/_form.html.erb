@@ -23,12 +23,13 @@
     <%= f.label :userpass %><br />
     <%= f.password_field :userpass %>
   </div>
+    <div class="field">
+    <%= f.label :usergroups %><br />
+    <%= f.collection_select(:usergroups, Groups.all, :id, :groupname,  {}, {:multiple => true, :class => 'select'})%>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
   
 <% end %>
-
-
-<%= @group.first.id%>
