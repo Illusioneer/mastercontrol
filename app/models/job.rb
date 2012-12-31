@@ -11,5 +11,6 @@ class Job
   field  :NumberOfMissedRuns, :type => Integer, :default => 0
   field  :LastTaskResult, :type => Integer, :default => 0
   field  :Definition, :type => String, :default => "none"
+  field  :Timestamp, :type =>  DateTime, :default => Time.now
 
 end

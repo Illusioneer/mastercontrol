@@ -1,3 +1,4 @@
+<%= javascript_include_tag "jquery.multiselect.js"%>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -23,10 +24,31 @@
     <%= f.label :userpass %><br />
     <%= f.password_field :userpass %>
   </div>
-    <div class="field">
-    <%= f.label :usergroups %><br />
-    <%= f.collection_select(:usergroups, Groups.all, :id, :groupname,  {}, {:multiple => true, :class => 'select'})%>
-  </div>
+    <table id='multi-select-2' class="manual-size">
+          <tr>
+            <td>
+              <%= f.collection_select :usergroups, Group.where(:_id.in => @user.usergroups).all, :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
+            </td>
+            <td>
+              <%= f.collection_select :notingroups, Group.where(:_id.nin => @user.usergroups).all, :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="Remove &raquo;"/>
+            </td>
+            <td>
+              <input type="button" value="&laquo; Add"/>
+            </td>
+          </tr>
+        </table>
+    
+  <script type="text/javascript">
+      $(function() {
+        $('#multi-select-2').multiselect();
+        /* show results on submit */
+       });
+    </script>
 
   <div class="actions">
     <%= f.submit %>

@@ -15,6 +15,10 @@
   <%= @user.userpass %>
 </p>
 
+<p>
+  <b>Usergroups:</b>
+  <%= @user.usergroups %>
+</p>
 
 <%= link_to 'Edit', "/users/#{@user.userid}/edit" %> |
-<%= link_to 'Back', '/users' %>
+<%= link_to 'Back', "/users" %>
