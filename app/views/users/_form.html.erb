@@ -27,10 +27,10 @@
     <table id='multi-select-2' class="manual-size">
           <tr>
             <td>
-              <%= f.collection_select :usergroups, Group.where(:_id.in => @user.usergroups).all, :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
+              <%= f.collection_select :usergroups, @user.userid ? Group.where(:_id.in => @user.usergroups).all : Group.all.limit(1) , :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
             </td>
             <td>
-              <%= f.collection_select :notingroups, Group.where(:_id.nin => @user.usergroups).all, :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
+              <%= f.collection_select :notingroups, @user.userid ? Group.where(:_id.nin => @user.usergroups).all : Group.all.skip(1) , :_id, :groupname, {}, {:multiple => true, :class => 'select'}%>
             </td>
           </tr>
           <tr>

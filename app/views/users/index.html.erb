@@ -15,8 +15,8 @@
     <td><%= user.userid %></td>
     <td><%= user.useremail %></td>
     <td><%= user.userpass %></td>
-    <td><%= link_to 'Show', '/users/' + user.userid %></td>
-    <td><%= link_to 'Edit', '/users/' + user.userid %></td>
+    <td><%= link_to 'Show', '/users/' + user.userid + '/show' %></td>
+    <td><%= link_to 'Edit', '/users/' + user.userid + '/edit'%></td>
     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>

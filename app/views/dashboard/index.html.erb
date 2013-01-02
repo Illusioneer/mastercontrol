@@ -1,5 +1,37 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <style type="text/css">
+         <%= render :file=>"#{Rails.root}/app/assets/stylesheets/test_email.css", :use_full_path=>true %>
+    </style>
+  </head>
+  <body>
+    <p>
+      Good morning <%= @user%>
+      At the time: <%= Time.now %> the check of active jobs was run, the results are:<br/>
+    </p>
 
-<a id="time"> <%=Time.now.strftime("Printed on %m/%d/%Y")%>  </a>
+    <table width="800" border="1">
+        <th>Name</th>
+        <th>State</th>
+        <th>Last Runtime</th>
+        <th>Next Runtime</th>
 
+      <%@joblist.each{|entry| %>
+      <tr>
+        <td><%= entry.Name%></td>
+
+        <%if entry.LastTaskResult.to_i != 0%>
+            <td class='failed'>FAILED</td>
+        <%else%>
+            <td class='passed'>PASSED</td>
+        <%end%>
+        <td><%= entry.LastRunTime%></td>
+        <td><%= entry.NextRunTime%></td>
+      </tr>  <%}%>
+    </table>​
+
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>

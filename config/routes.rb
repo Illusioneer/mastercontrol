@@ -58,7 +58,7 @@ Mastercontrol::Application.routes.draw do
   get "users/index"
 
   #get "users/show" 
-  get "users/:userid" => "users#show"
+  get "users/:userid/show" => "users#show"
 
   get "users/new"
 
@@ -209,7 +209,7 @@ Mastercontrol::Application.routes.draw do
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
-  root :to => "users#new"
+  root :to => "dashboard#index"
   resources :users
    
   resources :sessions
