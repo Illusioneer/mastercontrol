@@ -3,12 +3,12 @@
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <style type="text/css">
-         <%= render :file=>"#{Rails.root}/app/assets/stylesheets/test_email.css", :use_full_path=>true %>
+         <%= render :file=>"#{Rails.root}/app/assets/stylesheets/test_email.css.scss", :use_full_path=>true %>
     </style>
   </head>
   <body>
     <p>
-      At the time: <%= Time.now %> the check of active jobs was run, the results are:<br/>
+      At the time: <%= time_ago_in_words(2.days.ago)%> the check of active jobs was run, the results were:<br/>
     </p>
 
     <table width="800" border="1">
@@ -17,7 +17,7 @@
         <th>Last Runtime</th>
         <th>Next Runtime</th>
 
-      <%@joblist.each{|entry| %>
+      <%@oneday.each{|entry| %>
       <tr>
         <td><%= entry.Name%></td>
 
@@ -31,6 +31,29 @@
       </tr>  <%}%>
     </table>​
 
-    <p>Thanks for joining and have a great day!</p>
+    <p>
+      At the time: <%= time_ago_in_words(1.day.ago)%> the check of active jobs was run, the results were:<br/>
+    </p>    
+    
+    <table width="800" border="1">
+        <th>Name</th>
+        <th>State</th>
+        <th>Last Runtime</th>
+        <th>Next Runtime</th>
+
+      <%@oneday.each{|entry| %>
+      <tr>
+        <td><%= entry.Name%></td>
+
+        <%if entry.LastTaskResult.to_i != 0%>
+            <td class='failed'>FAILED</td>
+        <%else%>
+            <td class='passed'>PASSED</td>
+        <%end%>
+        <td><%= entry.LastRunTime%></td>
+        <td><%= entry.NextRunTime%></td>
+      </tr>  <%}%>
+    </table>​    
+    
   </body>
 </html>

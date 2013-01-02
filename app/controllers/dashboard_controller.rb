@@ -1,6 +1,8 @@
 class DashboardController < ApplicationController
   def index
-    @joblist = Job.desc(:LastTaskResult).where(:NextRunTime.lt => 25.hours.ago)
+    
+    @oneday = Job.where(:Timestamp.gt => 2.days.ago)
+    @twoday = Job.where(:Timestamp.gt => 4.days.ago).where(:Timestamp.lt => 3.days.ago)
   end
 
   def show
