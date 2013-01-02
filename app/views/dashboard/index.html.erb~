@@ -8,6 +8,7 @@
   </head>
   <body>
     <p>
+      Good morning <%= @user%>
       At the time: <%= Time.now %> the check of active jobs was run, the results are:<br/>
     </p>
 
