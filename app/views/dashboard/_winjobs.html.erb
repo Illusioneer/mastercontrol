@@ -1,0 +1,48 @@
+    <p>
+      A list of the active jobs that was run one day ago, the results were:<br/>
+    </p>    
+    
+    <table width="800" border="1">
+        <th>Name</th>
+        <th>State</th>
+        <th>Last Runtime</th>
+        <th>Next Runtime</th>
+
+      <%@oneday.each{|entry| %>
+      <tr>
+        <td><%= entry.Name%></td>
+
+        <%if entry.LastTaskResult.to_i != 0%>
+            <td class='failed'>FAILED</td>
+        <%else%>
+            <td class='passed'>PASSED</td>
+        <%end%>
+        <td><%= entry.LastRunTime%></td>
+        <td><%= entry.NextRunTime%></td>
+      </tr>  <%}%>
+    </table>​    
+    
+    <p>
+      A list of the active jobs that was run twp days ago, the results were:<br/>
+    </p>
+
+    <table width="800" border="1">
+        <th>Name</th>
+        <th>State</th>
+        <th>Last Runtime</th>
+        <th>Next Runtime</th>
+
+      <%@oneday.each{|entry| %>
+      <tr>
+        <td><%= entry.Name%></td>
+
+        <%if entry.LastTaskResult.to_i != 0%>
+            <td class='failed'>FAILED</td>
+        <%else%>
+            <td class='passed'>PASSED</td>
+        <%end%>
+        <td><%= entry.LastRunTime%></td>
+        <td><%= entry.NextRunTime%></td>
+      </tr>  <%}%>
+    </table>​
+    
