@@ -18,15 +18,9 @@ class JobController < ApplicationController
     # GET /apis/1
     # GET /apis/1.json
     def show
-
       params.delete("action")
       params.delete("controller")
       render :text => params
-     # @job= Job.where(title_slug: params[:id]).all.first
-     # respond_to do |format|
-     #   format.html # show.html.erb
-     #   format.json { render json: @job}
-     # end
     end
 
     # GET /apis/new
@@ -56,7 +50,6 @@ class JobController < ApplicationController
 
         @job = Job.new(entry)
         @job.save unless entry["NextRunTime"].year < 1900
-
       end
 
       UserMailer.test_email("Team").deliver
@@ -68,7 +61,7 @@ class JobController < ApplicationController
 #        end
 #      end
     end
-
+    
     # PUT /apis/1
     # PUT /apis/1.json
     def update

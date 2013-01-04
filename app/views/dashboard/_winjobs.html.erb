@@ -1,7 +1,15 @@
-    <p>
-      A list of the active jobs that was run one day ago, the results were:<br/>
-    </p>    
+    <script>
+    $(function() {
+        $( "#accordion" ).accordion();
+    });
+    </script>
     
+    <div id='accordion'>
+
+    <h3>
+      A list of the active jobs that was run one day ago, the results were:<br/>
+    </h3>    
+    <div>
     <table width="800" border="1">
         <th>Name</th>
         <th>State</th>
@@ -21,11 +29,12 @@
         <td><%= entry.NextRunTime%></td>
       </tr>  <%}%>
     </table>​    
+    </div>
     
-    <p>
-      A list of the active jobs that was run twp days ago, the results were:<br/>
-    </p>
-
+    <h3>
+      A list of the active jobs that was run two days ago, the results were:<br/>
+    </h3>
+    <div id='2day'>
     <table width="800" border="1">
         <th>Name</th>
         <th>State</th>
@@ -45,4 +54,6 @@
         <td><%= entry.NextRunTime%></td>
       </tr>  <%}%>
     </table>​
+    </div>
+    </div>
     

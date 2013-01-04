@@ -22,3 +22,4 @@ class DashboardController < ApplicationController
   def update
   end
 end
+
