@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>jQuery UI Tabs - Collapse content</title>
+    <meta http-equiv="refresh" content="10"; url="/dashboard/show">
+    <title>Harper Collins ETG Dashboard</title>
     <script>
     $(function() {
         $( "#tabs" ).tabs({
@@ -16,15 +17,15 @@
  
 <div id="tabs">
     <ul>
-        <li><a href="#tabs-1">WinServer Jobs</a></li>
-        <li><a href="#tabs-2">Nagios</a></li>
+        <li><a href="#tabs-1">Nagios</a></li>
+        <li><a href="#tabs-2">WinServer Jobs</a></li>
         <li><a href="#tabs-3">Cloud</a></li>
     </ul>
     <div id="tabs-1">
-        <%= render 'winjobs'%>
+        <%= render 'nagios'%>
     </div>
     <div id="tabs-2">
-	<%= render 'nagios'%>
+	<%= render 'winjobs'%>
     </div>
     <div id="tabs-3">
         <h1>Coming soon</h1>
