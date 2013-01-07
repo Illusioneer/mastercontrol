@@ -8,6 +8,7 @@ class DashboardController < ApplicationController
   def show
     @oneday = Job.where(:Timestamp.gt => 2.days.ago)
     @twoday = Job.where(:Timestamp.gt => 4.days.ago).where(:Timestamp.lt => 3.days.ago)
+    @nagios = Nagios.last
   end
 
   def new
