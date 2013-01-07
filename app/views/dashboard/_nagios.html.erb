@@ -7,8 +7,8 @@
 
       <%@nagios.servicestatus.each{|entry| %>
       <tr>
-        <td><%= entry['host_name']%></td>
-        <td><%= entry['service_description']%></td>
-        <td <%= entry['current state'].nil? ? "class='passed'" : "class='failed'" %>><%= entry['plugin_output']%></td>
+        <td width="200"><%= entry['host_name']%></td>
+        <td width="200"><%= entry['service_description']%></td>
+        <td width="400" <%= entry['current state'].nil? ? "class='passed'" : "class='failed'" %>><%= entry['plugin_output']%></td>
       </tr>  <%}%>
     </table>   
