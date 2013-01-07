@@ -10,7 +10,7 @@
       <tr>
         <td><%= entry['host_name']%></td>
 	<td><%= entry['service_description']%></td>
-        <td <%= entry['current state'].nil? ? "class='background-color: red'" : "class='background-color: green'" %>> STATUS </td>
+        <td <%= entry['current state'].nil? "class='background-color: red'" : "class='background-color: green'" %>> STATUS </td>
         <td><%= entry['plugin_output']%></td>
       </tr>  <%}%>
     </table>​   
