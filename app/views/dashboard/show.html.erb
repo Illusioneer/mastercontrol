@@ -6,9 +6,6 @@
 <script>
 
 $(function() {
-    $( "#draggable" ).draggable();
-  });
-$(function() {
 
       datum = <%= @dump%>
 	var chart = new Highcharts.StockChart({
@@ -27,7 +24,7 @@ $(function() {
 	        data: datum
 	    }]
 	});
-	$( "container" ).draggable();
+	$( "#container" ).draggable();
 });
 </script>
 
