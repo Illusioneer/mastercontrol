@@ -31,7 +31,6 @@ $(function() {
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="10"; url="/dashboard/show">
     <title>Harper Collins ETG Dashboard</title>
     <script>
     $(function() {
@@ -50,7 +49,7 @@ $(function() {
         <li><a href="#tabs-3">Cloud</a></li>
     </ul>
     <div id="tabs-1">
-        <%= render 'nagios'%>
+        <iframe src="/dashboard/_nagios"></iframe>
     </div>
     <div id="tabs-2">
 	<%= render 'winjobs'%>
