@@ -8,7 +8,8 @@ class DashboardController < ApplicationController
   def show
     @oneday = Job.where(:Timestamp.gt => 2.days.ago)
     @twoday = Job.where(:Timestamp.gt => 4.days.ago).where(:Timestamp.lt => 3.days.ago)
-    @nagios = Nagios.last.sort_by { |k| k["current_state"]}
+    @nagios = Nagios.last
+    @nagios.sort_by { |k| k["current_state"]}
     @dump = Nagios.service_history('adproxy1')
   end
 
