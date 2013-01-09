@@ -1,9 +1,13 @@
 <!doctype html>
-<div id="container" style="height: 400px; width: 600px"></div>
+<div id="container" class="ui-widget-content" style="height: 400px; width: 600px"></div>
 
 <script src="http://code.highcharts.com/stock/highstock.js"></script>
 <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
 <script>
+
+$(function() {
+    $( "#draggable" ).draggable();
+  });
 $(function() {
 
       datum = <%= @dump%>
@@ -23,6 +27,7 @@ $(function() {
 	        data: datum
 	    }]
 	});
+	$( "container" ).draggable();
 });
 </script>
 
