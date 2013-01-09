@@ -7,7 +7,7 @@ class Nagios
 
   def self.service_history(servicename)
       dib = Array.new
-      Nagios.all.each{|entry| [entry.servicestatus.each{|item| dib << [item['host_name'], item['check_latency']] unless item['host_name'] != "pub-dashboard-dev" }]}
+      Nagios.where(:timestamp => 12.hours.ago.to_i).each{|entry| [entry.servicestatus.each{|item| dib << [item['host_name'], item['check_latency']] unless item['host_name'] != "pub-dashboard-dev" }]}
       return dib
   end
   
