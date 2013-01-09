@@ -7,8 +7,18 @@ class Nagios
 
   def self.service_history(servicename)
       dib = Array.new
-      Nagios.where(:timestamp => 12.hours.ago.to_i).each{|entry| [entry.servicestatus.each{|item| dib << [item['host_name'], item['check_latency']] unless item['host_name'] != "pub-dashboard-dev" }]}
-      return dib
+        Nagios.where(:timestamp.gte => 12.hours.ago.to_i).each do |entry| 
+	  entry.servicestatus.each do |item| 
+	    dib << ["Date(#{item['last_update'].to_i})", item['check_latency'].to_f] unless item['host_name'] != servicename 
+	  end
+        end
+        javastring = "["
+        dib.each do |entry| 
+	  javastring = javastring + "[#{entry[0]}, #{entry[1]}],"          
+        end
+	javastring = javastring[0...-1]
+        javastring = javastring + "]"
+      return javastring
   end
   
 end
