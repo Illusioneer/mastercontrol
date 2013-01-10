@@ -14,14 +14,14 @@
         <td width="200"><%= entry['host_name']%></td>
         <td width="200"><%= entry['service_description']%></td>
         <td width="600" <%
-        case params[:animal] 
-	  when "0" %>
-	    class = "passed" 
-	  <% when "1" %>
-	    class = "warning"
-	  <% when "2" %>
-	    class = "failed"
-	  <% end %>><%= entry['plugin_output']%></td> 
+        case entry["current_state"] 
+          when 0 %>
+            class = "passed" 
+          <% when 1 %>
+            class = "warning"
+          <% when 2 %>
+            class = "failed"
+          <% end %>><%= entry['plugin_output']%></td> 
       </tr>  <%}%>
     </table>   
 </head>
