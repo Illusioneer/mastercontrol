@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-<meta http-equiv="refresh" content="10"; url="/dashboard/show">
+<meta http-equiv="refresh" content="10"; url="/dashboard/nagios">
 <h1> Started collecting data on: <%= Time.at(Nagios.last.timestamp)%>  </h1>
 
     <table width="1000" border="1">
@@ -13,7 +13,18 @@
       <tr>
         <td width="200"><%= entry['host_name']%></td>
         <td width="200"><%= entry['service_description']%></td>
-        <td width="600" <%= entry['current_state'] != 0 ? "class='failed'" : "class='passed'"%>><%= entry['plugin_output']%></td>
+        <td width="600" <%= 
+        case entry['current_state']
+        when "0"
+          "class='passed'>" entry['plugin_output']
+        when "1"
+          "class='warning'>" entry['plugin_output']
+        when "2"
+          "class='failed'>" entry['plugin_output']
+        else
+          ">" entry['plugin_output']
+        end  
+        %></td>
       </tr>  <%}%>
     </table>   
 </head>
