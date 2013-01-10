@@ -173,7 +173,9 @@ Mastercontrol::Application.routes.draw do
   get "dashboard/show"
 
   get "dashboard/new"
-
+  
+  get "dashboard/nagios"
+  
   get "dashboard/edit"
 
   get "dashboard/destroy"
