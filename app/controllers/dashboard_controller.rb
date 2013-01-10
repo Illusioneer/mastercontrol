@@ -22,7 +22,6 @@ class DashboardController < ApplicationController
   end
 
   def nagios
-    case entry['current_state']
 
     @nagios = Nagios.last.servicestatus.sort_by { |k| k["current_state"]}
     @dump = Nagios.service_history('pub-dashboard-dev')
