@@ -21,7 +21,11 @@ class DashboardController < ApplicationController
   def destroy
   end
 
+  def nagios
+  end
+  
   def update
   end
+  
 end
 
