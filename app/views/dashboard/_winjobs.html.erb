@@ -19,7 +19,7 @@
         <th>Last Runtime</th>
         <th>Next Runtime</th>
 
-      <%@oneday.each{|entry| %>
+      <%@oneday.reverse.each{|entry| %>
       <tr>
         <td><%= entry.Name%></td>
 
@@ -45,7 +45,7 @@
         <th>Last Runtime</th>
         <th>Next Runtime</th>
 
-      <%@oneday.each{|entry| %>
+      <%@oneday.reverse.each{|entry| %>
       <tr>
         <td><%= entry.Name%></td>
 
