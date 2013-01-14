@@ -1,6 +1,4 @@
 <!doctype html>
-<div id="container" class="ui-widget-content" style="height: 400px; width: 600px"></div>
-
 <script src="http://code.highcharts.com/stock/highstock.js"></script>
 <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
 <script>
@@ -41,15 +39,15 @@ $(function() {
     </script>
 </head>
 <body>
- 
-<div id="tabs">
+<div id="container" class="ui-widget-content" style="height: 400px; width: 600px"></div> 
+<div id="tabs" style=>
     <ul>
         <li><a href="#tabs-1">Nagios</a></li>
         <li><a href="#tabs-2">WinServer Jobs</a></li>
         <li><a href="#tabs-3">Cloud</a></li>
     </ul>
     <div id="tabs-1">
-        <iframe src="/dashboard/_nagios"></iframe>
+        <iframe src="/dashboard/nagios" width=1200 height=3000 frameBorder="0"></iframe>
     </div>
     <div id="tabs-2">
 	<%= render 'winjobs'%>
