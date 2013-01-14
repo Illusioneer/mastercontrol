@@ -28,8 +28,8 @@
         <%else%>
             <td class='passed'>PASSED</td>
         <%end%>
-        <td><%= entry.LastRunTime%></td>
-        <td><%= entry.NextRunTime%></td>
+        <td><%= entry.LastRunTime.to_formatted_s(:long_ordinal)%></td>
+        <td><%= entry.NextRunTime.to_formatted_s(:long_ordinal)%></td>
         <td><%= entry.Hostname%></td>
       </tr>  <%}%>
     </table>​    
