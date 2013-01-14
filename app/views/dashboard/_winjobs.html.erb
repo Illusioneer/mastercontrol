@@ -1,3 +1,4 @@
+    <script src="/assets/tablesort.js"></script>
     <script>
     $(function() {
         $( "#accordion" ).accordion({
@@ -14,10 +15,10 @@
     </h3>    
     <div>
     <table width="800" border="1">
-        <th>Name</th>
-        <th>State</th>
-        <th>Last Runtime</th>
-        <th>Next Runtime</th>
+        <th id="name">Name</th>
+        <th id="state">State</th>
+        <th id="nextrun">Last Runtime</th>
+        <th id="lastrun">Next Runtime</th>
 
       <%@oneday.reverse.each{|entry| %>
       <tr>

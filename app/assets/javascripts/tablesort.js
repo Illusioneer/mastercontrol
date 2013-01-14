@@ -1,6 +1,6 @@
 var table = $('table');
     
-$('#facility_header, #city_header')
+$('#name, #status, #lastrun, #nextrun')
     .wrapInner('<span title="sort this column"/>')
     .each(function(){
         
@@ -20,15 +20,12 @@ $('#facility_header, #city_header')
                     inverse ? -1 : 1
                     : inverse ? 1 : -1;
                     
-            }, function(){
-                    
+            }, function(){                    
                 // parentNode is the element we want to move
-                return this.parentNode; 
-                    
+                return this.parentNode;                     
             });
                 
             inverse = !inverse;
                     
-        });
-                
-    });
+        });                
+      });
