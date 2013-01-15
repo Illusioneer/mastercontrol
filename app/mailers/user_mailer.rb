@@ -10,5 +10,8 @@ class UserMailer < ActionMailer::Base
 
     mail(:to => @defaulted, :subject => "Welcome to My Awesome Site")
   end
-
+  
+  def task_email(address)
+    mail(:to => @defaulted, :subject => "Welcome to My Awesome Site")
+  end
 end
