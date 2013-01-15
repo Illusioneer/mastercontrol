@@ -3,6 +3,7 @@ class TasksController < ApplicationController
   end
 
   def show
+    Wintask.perform("bryankowens@gmail.com")
   end
 
   def new
