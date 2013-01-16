@@ -141,6 +141,8 @@ Mastercontrol::Application.routes.draw do
   get "job/destory"
 
   get "job/show"
+  
+  get "job/scranton"
 
   get "api/index"
 

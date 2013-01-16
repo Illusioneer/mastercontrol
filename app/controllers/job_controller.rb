@@ -35,6 +35,18 @@ class JobController < ApplicationController
     end
 
     # GET /apis/1/edit
+    def scranton
+
+      params['_json'].each do |entry|
+        entry["LastRunTime"] = DateTime.strptime(entry["LastRunTime"], "%m/%d/%Y %H:%M:%S %p")
+        entry["NextRunTime"] = DateTime.strptime(entry["NextRunTime"], "%m/%d/%Y %H:%M:%S %p")
+	entry["LastTaskResult"] = entry["LastTaskResult"].to_i.abs
+
+        @job = Job.new(entry)
+      end
+    end
+    
+    # GET /apis/1/edit
     def edit
       @job= Job.find(params[:id])
     end
