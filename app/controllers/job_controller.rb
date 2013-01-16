@@ -37,13 +37,19 @@ class JobController < ApplicationController
     # GET /apis/1/edit
     def scranton
 
-      params['_json'].each do |entry|
-        entry["LastRunTime"] = DateTime.strptime(entry["LastRunTime"], "%m/%d/%Y %H:%M:%S %p")
-        entry["NextRunTime"] = DateTime.strptime(entry["NextRunTime"], "%m/%d/%Y %H:%M:%S %p")
-	entry["LastTaskResult"] = entry["LastTaskResult"].to_i.abs
+      @wincheck= Wincheck.new(params['_json'])	
+      @wincheck.save  
 
-        @job = Job.new(entry)
+      respond_to do |format|
+        if @job.update_attributes(params[:job])
+          format.html { head :ok  }
+          format.json { head :ok }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @job.errors, status: :unprocessable_entity }
+        end
       end
+    
     end
     
     # GET /apis/1/edit

@@ -142,7 +142,7 @@ Mastercontrol::Application.routes.draw do
 
   get "job/show"
   
-  get "job/scranton"
+  post "job/scranton"
 
   get "api/index"
 
