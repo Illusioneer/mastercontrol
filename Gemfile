@@ -10,6 +10,7 @@ gem 'mongoid', '>=2.4.0'
 gem 'bson_ext'
 gem 'bcrypt-ruby'
 gem 'sidekiq'
+gem 'formtastic'
 
 # Gems used only for assets and not required
 # in production environments by default.

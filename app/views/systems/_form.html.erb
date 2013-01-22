@@ -1,0 +1,28 @@
+<%= javascript_include_tag "jquery.multiselect.js"%>
+<% semantic_form_for @instance do |f| %>
+  <% f.inputs do %>
+      <%= f.input :name  %>
+      <%= f.input :canonical %>
+      <%= f.input :main_ip %>
+      <%= f.input :other_ip %>
+      <%= f.input :location %>
+      <%= f.input :provider %>
+      <%= f.input :owners %>
+      <%= f.input :groups %>
+      <%= f.input :accounts %>
+      <%= f.input :access_type %>
+      <%= f.input :ssh_keys %>
+      <%= f.input :tags %>
+      <%= f.input :os_type %>
+      <%= f.input :os_version %>
+      <%= f.input :disks %>
+      <%= f.input :ram %>
+      <%= f.input :description %>
+    <% end %>
+  <%= f.buttons %>
+<% end %>
+  
+  
+  
+
+  
