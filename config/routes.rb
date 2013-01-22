@@ -1,4 +1,18 @@
 Mastercontrol::Application.routes.draw do
+  get "instances/index"
+
+  get "instances/new"
+
+  get "instances/show"
+
+  get "instances/update"
+
+  get "instances/create"
+
+  get "instances/edit"
+
+  get "instances/destroy"
+
   get "systems/index"
 
   get "systems/show"

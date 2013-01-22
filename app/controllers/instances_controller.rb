@@ -1,4 +1,4 @@
-class SystemsController < ApplicationController
+class InstancesController < ApplicationController
   # GET /instances
   # GET /instances.json
   def index
