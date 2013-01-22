@@ -1,0 +1,21 @@
+<%= javascript_include_tag "jquery.multiselect.js"%>
+<%= form_for(@instance) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :canonical %><br />
+    <%= f.text_field :canonical %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  
+<% end %>
