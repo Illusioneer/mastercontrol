@@ -22,5 +22,3 @@ class Instance
   embeds_many :sweeps
   embeds_many :services
 end
-
-
