@@ -5,6 +5,7 @@
     <%= f.input :canonical, :label => "FQDN" %>
     <%= f.input :location, :label => "Data Center"%>
     <%= f.input :location, :label => "Group Owner", :as => :select, :collection => Hash[Group.all.map{|b| [b.groupname,b._id]}]%>
+    <%= f.input :location, :label => "Date", :as => :date_select %>
   <% end %>
   <%= f.actions do %>
     <%= f.action :submit, :as => :button %>
