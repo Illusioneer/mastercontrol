@@ -44,7 +44,7 @@ class InstancesController < ApplicationController
 
     respond_to do |format|
       if @instance.save
-        format.html { redirect_to "/instanecs/#{@instance.name}/show", notice: "Instance was successfully created." }
+        format.html { redirect_to "/instances", notice: "Instance was successfully created." }
         format.json { render json: @instance, status: :created, location: @instance }
       else
         format.html { render action: "new" }
