@@ -4,7 +4,7 @@
     <%= f.input :name, :label => Time.now.year%>
     <%= f.input :canonical, :label => "FQDN" %>
     <%= f.input :location, :label => "Data Center"%>
-    <%= f.input :groupname, :label => "Group Owner", :as => :select, :collection => Hash[Group.all.map{|b| [b.groupname,b._id]}]%>
+    <%= f.input :groupname, :label => "Group Owner", :as => :select, :collection => Hash[Group.all.map{|b| [b.groupname,b._id]}], :input_html => { :multiple => true }%>
   <% end %>
   <%= f.actions do %>
     <%= f.action :submit, :as => :button %>
