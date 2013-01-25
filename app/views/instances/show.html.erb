@@ -3,23 +3,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Userid:</b>
+  <b>NAME:</b>
   <%= @instance.name %>
 </p>
 
 <p>
-  <b>Useremail:</b>
+  <b>FQDN:</b>
   <%= @instance.canonical %>
 </p>
 
 <p>
-  <b>Userpass:</b>
+  <b>LOCATION:</b>
   <%= @instance.location %>
 </p>
 
 <p>
-  <b>Usergroups:</b>
-  <%= @instance.usergroups %>
+  <b>Group Owners:</b>
+  <%= @instance.groups %>
 </p>
 
 <%= link_to 'Edit', "/instances/#{@instance.name}/edit" %> |
