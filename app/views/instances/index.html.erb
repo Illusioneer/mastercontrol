@@ -9,7 +9,7 @@
 
 <% Instance.all.each do |server| %>
   <tr>
-    <td><%= server.name %></td>
+    <td><%= link_to server.name, "/instances/#{server.name}/edit"%></td>
     <td><%= server.canonical %></td>
     <td><%= server.location %></td>
     <td><%= link_to 'Edit', "/instances/#{server.name}/edit" %></td>
