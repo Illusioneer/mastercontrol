@@ -1,2 +1,26 @@
 <h1>Instances#show</h1>
 <p>Find me in app/views/instances/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @instance.name %>
+</p>
+
+<p>
+  <b>Useremail:</b>
+  <%= @instance.canonical %>
+</p>
+
+<p>
+  <b>Userpass:</b>
+  <%= @instance.location %>
+</p>
+
+<p>
+  <b>Usergroups:</b>
+  <%= @instance.usergroups %>
+</p>
+
+<%= link_to 'Edit', "/instances/#{@instance.name}/edit" %> |
+<%= link_to 'Back', "/instances" %>
