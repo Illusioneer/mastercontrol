@@ -25,6 +25,18 @@ class ApiController < ApplicationController
    # end
   end
 
+  def showgroups
+
+    @groups = Hash[Group.all.map{|b| [b.groupname,b._id]}], :input_html => { :multiple => true }
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @groups }
+      format.atom { render :action=>'index',:layout=>false }
+      format.rss { render :layout => false }
+    end
+    
+  end
+  
   # GET /apis/new
   # GET /apis/new.json
   def new

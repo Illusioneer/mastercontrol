@@ -160,17 +160,7 @@ Mastercontrol::Application.routes.draw do
 
   get "api/index"
 
-  get "api/show"
-
-  get "api/new"
-
-  get "api/create"
-
-  get "api/edit"
-
-  get "api/update"
-
-  get "api/destroy"
+  get "api/showgroups"
 
   get "scrappy/index"
 

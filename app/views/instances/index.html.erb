@@ -1,2 +1,21 @@
-<h1>Instances#index</h1>
-<p>Find me in app/views/instances/index.html.erb</p>
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Server</th>
+    <th>FQDN</th>
+    <th></th>
+  </tr>
+
+<% Instances.each do |server| %>
+  <tr>
+    <td><%= server.name %></td>
+    <td><%= server.canonical %></td>
+    <td><%= server.location %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>
