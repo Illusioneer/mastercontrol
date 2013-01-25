@@ -11,7 +11,7 @@ Mastercontrol::Application.routes.draw do
   get "instances/create"
 
   #get "instances/edit"
-  get "instances/:name/edit" => "instances#show"
+  get "instances/:name/edit" => "instances#edit"
   
   get "instances/destroy"
 
