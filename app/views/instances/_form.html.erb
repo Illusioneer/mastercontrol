@@ -1,5 +1,5 @@
 <%= javascript_include_tag "jquery.multiselect.js"%>
-<%= semantic_form_for Instance.new do |f| %>
+<%= semantic_form_for @instance do |f| %>
   <%= f.inputs do %>
     <%= f.input :name, :label => Time.now.year%>
     <%= f.input :canonical, :label => "FQDN" %>
