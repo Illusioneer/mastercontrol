@@ -3,14 +3,16 @@ Mastercontrol::Application.routes.draw do
 
   get "instances/new"
 
-  get "instances/show"
+  #get "instances/show"
+  get "instances/:name/show" => "instances#show"
 
   get "instances/update"
 
   get "instances/create"
 
-  get "instances/edit"
-
+  #get "instances/edit"
+  get "instances/:name/edit" => "instances#show"
+  
   get "instances/destroy"
 
   get "systems/index"
