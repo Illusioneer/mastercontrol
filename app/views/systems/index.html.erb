@@ -1,16 +1,30 @@
+<script>
+$(function() {
+    $("#serverlist").accordion({
+  collapsible: true,
+  heightStyle: "fill"
+});
+});
+</script>
 <h1 class="time">Index of All Systems As Of: <%=Time.now%></h1>
+
+<div class="serverlist">
+<% Instance.all.each do |system|%>
 
 <table class="grid" width="900" border="1">
     <th>Name</th>
     <th>FQDN</th>
     <th>Location</th>
 
-    <% Instance.all.each do |system|%>
+
           <tr class='server' id="<%=system._id%>">
             <td width="200"><%= system.name%></td>
             <td width="200"><%= system.canonical%></td>
             <td width="200"><%= system.location%></td>
+            <td width="200"><%= system.groups%></td>
           </tr>
-    <%end%>
+
 </table>
+<%end%>
+</div>
 
