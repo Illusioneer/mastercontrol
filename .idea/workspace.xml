@@ -44,19 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="-6.25">
+            <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2183406">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="systems.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="systems.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="521" selection-end="521" vertical-scroll-proportion="0.48523206">
+            <state line="17" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -727,7 +727,11 @@
       <created>1359496965178</created>
       <updated>1359496965178</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Initial view of the system index page.">
+      <created>1359497042874</created>
+      <updated>1359497042874</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -904,16 +908,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="-6.25">
+        <state line="17" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="521" selection-end="521" vertical-scroll-proportion="0.48523206">
+        <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2183406">
           <folding />
         </state>
       </provider>
