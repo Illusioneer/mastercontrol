@@ -4,7 +4,6 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +56,7 @@
       <file leaf-file-name="systems.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="452" selection-end="452" vertical-scroll-proportion="0.48816568">
+            <state line="25" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.55473375">
               <folding />
             </state>
           </provider>
@@ -102,8 +101,8 @@
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
       </list>
     </option>
   </component>
@@ -708,7 +707,11 @@
       <created>1359494063329</created>
       <updated>1359494063329</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Initial view of the system index page.">
+      <created>1359495211438</created>
+      <updated>1359495211438</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -894,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="452" selection-end="452" vertical-scroll-proportion="0.48816568">
+        <state line="25" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.55473375">
           <folding />
         </state>
       </provider>
