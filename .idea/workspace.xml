@@ -4,6 +4,7 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +48,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2183406">
+            <state line="12" column="46" selection-start="286" selection-end="286" vertical-scroll-proportion="0.26200873">
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="systems.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="17" column="20" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,8 +102,8 @@
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
       </list>
     </option>
   </component>
@@ -731,7 +732,11 @@
       <created>1359497042874</created>
       <updated>1359497042874</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Initial view of the system index page.">
+      <created>1359497359474</created>
+      <updated>1359497359474</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -910,14 +915,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+        <state line="17" column="20" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2183406">
+        <state line="12" column="46" selection-start="286" selection-end="286" vertical-scroll-proportion="0.26200873">
           <folding />
         </state>
       </provider>

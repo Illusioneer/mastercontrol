@@ -21,7 +21,7 @@ body {
   p.center { text-align: center }
 
   div.servername, div.serverfqdn, div.label {
-      display:inline;
+      display:inline-block;
       width:250px;
       background:red;
       margin:50px 0;
