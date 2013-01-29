@@ -9,18 +9,17 @@ body {
   color:  black;
 
   #time {color:red}
-
-  div.server {
-    background-color: red;
-  }
-
   h1 {
     color: blue;
     font-size: 10;
     font-family: helvetica;
   }
 
-  table {
+  table.grid {
+    tr.server {
+      background-color: red;
+    }
+
     background-color: lightgrey;
 
     td.failed {
