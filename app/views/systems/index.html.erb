@@ -5,13 +5,11 @@
     <th>Location</th>
 
     <% Instance.all.each do |system|%>
-        <div class='server' id="<%=system._id%>">
-          <tr>
+          <tr class='server' id="<%=system._id%>">
             <td width="200"><%= system.name%></td>
             <td width="200"><%= system.canonical%></td>
             <td width="200"><%= system.location%></td>
           </tr>
-        </div>
     <%end%>
 </table>
 
