@@ -3,14 +3,12 @@ Mastercontrol::Application.routes.draw do
 
   get "instances/new"
 
-  #get "instances/show"
   get "instances/:name/show" => "instances#show"
 
   get "instances/update"
 
   get "instances/create"
 
-  #get "instances/edit"
   get "instances/:name/edit" => "instances#edit"
   
   get "instances/destroy"
@@ -43,20 +41,6 @@ Mastercontrol::Application.routes.draw do
 
   get "reports/destroy"
 
-  get "tasks/index"
-
-  get "tasks/show"
-
-  get "tasks/new"
-
-  get "tasks/create"
-
-  get "tasks/update"
-
-  get "tasks/edit"
-
-  get "tasks/destroy"
-
   get "groups/index"
 
   get "groups/show"
@@ -73,7 +57,6 @@ Mastercontrol::Application.routes.draw do
 
   get "users/index"
 
-  #get "users/show" 
   get "users/:userid/show" => "users#show"
 
   get "users/new"
@@ -82,68 +65,10 @@ Mastercontrol::Application.routes.draw do
 
   get "users/update"
 
-  #get "users/edit"
-  
   get "users/:userid/edit" => "users#edit"
 
   get "users/destroy"
 
-  get "agent/index"
-
-  get "agent/show"
-
-  get "agent/new"
-
-  get "agent/create"
-
-  get "agent/update"
-
-  get "agent/edit"
-
-  get "agent/destroy"
-
-  get "task/index"
-
-  get "task/show"
-
-  get "task/new"
-
-  get "task/create"
-
-  get "task/update"
-
-  get "task/edit"
-
-  get "task/destroy"
-
-  get "report/index"
-
-  get "report/show"
-
-  get "report/new"
-
-  get "report/create"
-
-  get "report/update"
-
-  get "report/edit"
-
-  get "report/destroy"
-
-  get "group/index"
-
-  get "group/show"
-
-  get "group/new"
-
-  get "group/create"
-
-  get "group/update"
-
-  get "group/edit"
-
-  get "group/destroy"
-  
   post "job/new"
 
   post "job/create"
@@ -164,18 +89,6 @@ Mastercontrol::Application.routes.draw do
 
   get "api/showgroups"
 
-  get "scrappy/index"
-
-  get "scrappy/show"
-
-  get "scrappy/new"
-
-  get "scrappy/update"
-
-  get "scrappy/edit"
-
-  get "scrappy/destroy"
-
   get "dashboard/index"
 
   get "dashboard/show"
@@ -193,9 +106,6 @@ Mastercontrol::Application.routes.draw do
   get "dashboard/timestamp"
 
   match 'test' => 'application#testing'
-  
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
 
   resources :instances do
 
@@ -205,17 +115,6 @@ Mastercontrol::Application.routes.draw do
 
   end
 
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -228,6 +127,14 @@ Mastercontrol::Application.routes.draw do
   resources :dashboard
 
   resources :api
+
+  root :to => 'dashboard#index'
+
+end
+
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -261,13 +168,23 @@ Mastercontrol::Application.routes.draw do
   #     resources :products
   #   end
 
+  # Sample of regular route:
+  #   match 'products/:id' => 'catalog#view'
+  # Keep in mind you can assign values other than :controller and :action
+
+  # Sample of named route:
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  # This route can be invoked with purchase_url(:id => product.id)
+
+  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :products
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'dashboard#index'
+
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end

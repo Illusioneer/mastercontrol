@@ -18,8 +18,10 @@
 </p>
 
 <p>
-  <b>Group Owners:</b>
-  <%= @instance.groups %>
+  <b>Group Owner:</b>
+ <%@instance.groups.each do |bsid| %>
+        <%= Group.where(:_id => bsid).count > 0 ? Group.where(:_id => bsid).first.groupname : "nope"%>
+<% end%>
 </p>
 
 <%= link_to 'Edit', "/instances/#{@instance.name}/edit" %> |

@@ -58,6 +58,7 @@ class InstancesController < ApplicationController
   def update
     @form = params[:instance]
     @instance = Instance.find(params[:id])
+    @instance.groups = params[:instance]['groups'].delete_if {|x| x == "" } 
 
     respond_to do |format|
       if @instance.save(@form)
