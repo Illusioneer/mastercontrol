@@ -56,7 +56,7 @@
       <file leaf-file-name="systems.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="493" selection-end="493" vertical-scroll-proportion="0.46413502">
+            <state line="23" column="20" selection-start="521" selection-end="521" vertical-scroll-proportion="0.48523206">
               <folding />
             </state>
           </provider>
@@ -723,7 +723,11 @@
       <created>1359496811913</created>
       <updated>1359496811913</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Initial view of the system index page.">
+      <created>1359496965178</created>
+      <updated>1359496965178</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -909,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="493" selection-end="493" vertical-scroll-proportion="0.46413502">
+        <state line="23" column="20" selection-start="521" selection-end="521" vertical-scroll-proportion="0.48523206">
           <folding />
         </state>
       </provider>
