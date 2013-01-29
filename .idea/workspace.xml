@@ -48,7 +48,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="254" selection-end="254" vertical-scroll-proportion="-7.5">
+            <state line="12" column="21" selection-start="261" selection-end="261" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file leaf-file-name="systems.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="501" selection-end="501" vertical-scroll-proportion="0.55473375">
+            <state line="18" column="17" selection-start="413" selection-end="413" vertical-scroll-proportion="0.39940828">
               <folding />
             </state>
           </provider>
@@ -697,7 +697,11 @@
       <created>1359492200383</created>
       <updated>1359492200383</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Initial view of the system index page.">
+      <created>1359492302003</created>
+      <updated>1359492302003</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -867,6 +871,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="261" selection-end="261" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="489" selection-end="572" vertical-scroll-proportion="-6.5416665">
@@ -874,16 +885,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="254" selection-end="254" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="501" selection-end="501" vertical-scroll-proportion="0.55473375">
+        <state line="18" column="17" selection-start="413" selection-end="413" vertical-scroll-proportion="0.39940828">
           <folding />
         </state>
       </provider>
