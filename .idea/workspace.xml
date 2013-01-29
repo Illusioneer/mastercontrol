@@ -47,7 +47,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="54" selection-start="655" selection-end="655" vertical-scroll-proportion="0.6671779">
+            <state line="27" column="6" selection-start="648" selection-end="648" vertical-scroll-proportion="0.62116563">
               <folding />
             </state>
           </provider>
@@ -684,7 +684,11 @@
       <created>1359490794091</created>
       <updated>1359490794091</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial view of the system index page.">
+      <created>1359491807030</created>
+      <updated>1359491807030</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -870,7 +874,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="54" selection-start="655" selection-end="655" vertical-scroll-proportion="0.6671779">
+        <state line="27" column="6" selection-start="648" selection-end="648" vertical-scroll-proportion="0.62116563">
           <folding />
         </state>
       </provider>

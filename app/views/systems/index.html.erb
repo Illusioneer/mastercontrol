@@ -8,9 +8,9 @@ $(function() {
 </script>
 <h1 class="time">Index of All Systems As Of: <%=Time.now%></h1>
 
-<div class="serverlist">
+<div id="serverlist">
 <% Instance.all.each do |system|%>
-
+<div>
 <table class="grid" width="900" border="1">
     <th>Name</th>
     <th>FQDN</th>
@@ -25,6 +25,7 @@ $(function() {
           </tr>
 
 </table>
+</div>
 <%end%>
 </div>
 
