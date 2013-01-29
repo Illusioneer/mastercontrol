@@ -1,17 +1,18 @@
 <h1 xmlns="http://www.w3.org/1999/html">Index of All Systems As Of: <%=Time.now%></h1>
-
+<table width="900" border="1">
+    <th>Name</th>
+    <th>FQDN</th>
+    <th>Location</th>
 
 <% Instance.all.each do |system|%>
     <div id="<%=system._id%>">
-    <table width="900" border="1">
-        <th>Name</th>
-        <th>FQDN</th>
-        <th>Location</th>
+
       <tr>
         <td width="200"><%= system.name%></td>
         <td width="200"><%= system.canonical%></td>
         <td width="200" <%= system.location%></td>
       </tr>
-    </table>
     </div>
+    </table>
+
 <%end%>
