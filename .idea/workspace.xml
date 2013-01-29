@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
@@ -47,7 +48,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="648" selection-end="648" vertical-scroll-proportion="0.62116563">
+            <state line="12" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.2760736">
               <folding />
             </state>
           </provider>
@@ -74,7 +75,7 @@
       <file leaf-file-name="_winjobs.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="-8.125">
+            <state line="15" column="4" selection-start="489" selection-end="572" vertical-scroll-proportion="-6.5416665">
               <folding />
             </state>
           </provider>
@@ -96,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/sweep.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/windex.html" />
@@ -111,6 +111,7 @@
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
       </list>
     </option>
@@ -688,7 +689,11 @@
       <created>1359491807030</created>
       <updated>1359491807030</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Initial view of the system index page.">
+      <created>1359492003228</created>
+      <updated>1359492003228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -867,14 +872,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/_winjobs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="-8.125">
+        <state line="15" column="4" selection-start="489" selection-end="572" vertical-scroll-proportion="-6.5416665">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="648" selection-end="648" vertical-scroll-proportion="0.62116563">
+        <state line="12" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.2760736">
           <folding />
         </state>
       </provider>
