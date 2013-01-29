@@ -10,17 +10,15 @@ $(function() {
 
 <div id="serverlist">
 <% Instance.all.each do |system|%>
-<h5 class="servername"><%= system.name%>:<br/></h5>
+<h5 class="servername"><tr class='server' id="<%=system._id%>"><td width="200"><%= system.name%></td><td width="250"><%= system.canonical%></td><tr><br/></h5>
 <div class="server">
 <table class="grid" width="900" border="1">
     <th>Name</th>
     <th>FQDN</th>
     <th>Location</th>
-
-
-          <tr class='server' id="<%=system._id%>">
+          <tr>
             <td width="200"><%= system.name%></td>
-            <td width="200"><%= system.canonical%></td>
+            <td width="250"><%= system.canonical%></td>
             <td width="200"><%= system.location%></td>
             <td width="200"><%= system.groups%></td>
           </tr>
