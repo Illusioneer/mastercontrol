@@ -7,7 +7,7 @@ $(function() {
 });
 </script>
 <h1 class="time">Index of All Systems As Of: <%=Time.now%></h1>
-<%image_tag("rails.png") %>
+<%= image_tag "rails.png", :size => "15x15" %>
 
 <div id="serverlist">
 <% Instance.all.each do |system|%>
