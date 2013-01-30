@@ -42,6 +42,7 @@ class InstancesController < ApplicationController
   def create
     @instance = Instance.new(params[:instance])
     @instance.groups = params[:instance]['groups'].delete_if {|x| x == "" }
+    @instance.tags = params[:instance]['tags'].split(',')
 
     respond_to do |format|
       if @instance.save
