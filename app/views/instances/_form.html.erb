@@ -5,6 +5,9 @@
     <%= f.input :canonical, :label => "FQDN" %>
     <%= f.input :location, :label => "Data Center"%>
     <%= f.input :groups, :label => "Group Owner", :as => :select, :collection => Hash[Group.all.map{|b| [b.groupname,b._id]}], :input_html => { :multiple => true }%>
+    <%= f.input :provider, :as => :select, :collection => [["Scranton", "hc1.jpg"], ["Amazon", "ec2.jpg"], ["MediaTemple", "mt3.jpg"]]  %>
+    <%= f.input :os_type, :as => :select, :collection => [["Windows Server 2003", "win2003"], ["Windows Server 2008", "win2008"], ["Windows Server 2012", "win2012"], ["Red Hat Enterprise Linux", "linuxrhel"], ["OpenSUSE Linux", "linuxsuse"], ["Ubuntu Linux", "linuxubuntu"]]  %>
+    <%= f.input :description, :label => "Details" %>
   <% end %>
   <%= f.actions do %>
     <%= f.action :submit, :as => :button %>

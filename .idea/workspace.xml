@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/instances/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/instances/_form.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="42" selection-start="224" selection-end="224" vertical-scroll-proportion="0.13719513">
+            <state line="31" column="54" selection-start="887" selection-end="887" vertical-scroll-proportion="-19.375">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="80" selection-start="573" selection-end="573" vertical-scroll-proportion="-7.5">
+            <state line="15" column="68" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.22865854">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="instance.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="8" selection-start="505" selection-end="513" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,15 +75,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/instances_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="40" column="131" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="instance.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="59" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/windex.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/dashboard.css.scss" />
         <option value="$PROJECT_DIR$/app/models/job.rb" />
@@ -112,6 +111,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/instances_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/instances/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -824,7 +824,11 @@
       <created>1359564336314</created>
       <updated>1359564336314</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Initial view of the system index page.">
+      <created>1359566600317</created>
+      <updated>1359566600317</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -976,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="59" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="71" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.9375">
@@ -997,16 +994,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="80" selection-start="573" selection-end="573" vertical-scroll-proportion="-7.5">
+        <state line="31" column="54" selection-start="887" selection-end="887" vertical-scroll-proportion="-19.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="224" selection-end="224" vertical-scroll-proportion="0.13719513">
+        <state line="15" column="8" selection-start="505" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="68" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.22865854">
           <folding />
         </state>
       </provider>
