@@ -2,10 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-form.instance_form {
+div.instance_form {
   border-width: 2px;
   border-color: black;
   width: 500px;
+}
+
+form {
   ol li label {
     color: blue;
     width: 20%;
