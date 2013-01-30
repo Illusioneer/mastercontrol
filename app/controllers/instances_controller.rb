@@ -40,10 +40,10 @@ class InstancesController < ApplicationController
   # POST /instances
   # POST /instances.json
   def create
-    @instance = Instance.new(params[:instance])
-    @instance.groups = params[:instance]['groups'].delete_if {|x| x == "" }
-    @instance.tags = params[:instance]['tags'].split(',')
+    params[:instance]['groups'] = params[:instance]['groups'].delete_if {|x| x == "" }
+    params[:instance]['tags'] = params[:instance]['tags'].split(",").to_ary
 
+    @instance = Instance.new(params[:instance])
     respond_to do |format|
       if @instance.save
         format.html { redirect_to "/instances", notice: "Instance was successfully created." }
@@ -58,10 +58,10 @@ class InstancesController < ApplicationController
   # PUT /instances/1
   # PUT /instances/1.json
   def update
-    @form = params[:instance]
-    @instance = Instance.find(params[:id])
-    @instance.groups = params[:instance]['groups'].delete_if {|x| x == "" } 
+    params[:instance]['groups'] = params[:instance]['groups'].delete_if {|x| x == "" }
+    params[:instance]['tags'] = params[:instance]['tags'].split(",").to_ary
 
+    @instance = Instance.new(params[:instance])
     respond_to do |format|
       if @instance.save(@form)
        format.html { redirect_to "/instances/#{@instance.name}/show", notice: "Instance was successfully updated." }
