@@ -12,6 +12,7 @@ $(function() {
 <% Instance.all.each do |system|%>
 <h5 class="servername"><div class="serverlabel"><div class="label"><p class="center"><%= system.name%></p></div><div class="label"><p class="center"><%= system.canonical%></p></div></div><br/></h5>
 <div class="server">
+<%image_tag("ec2.jpg", :mouseover => image_path("hc1.jpg")) %>
 <table class="grid" width="700" border="1">
     <th>Name</th>
     <th>FQDN</th>

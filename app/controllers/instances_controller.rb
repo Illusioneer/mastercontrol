@@ -41,6 +41,7 @@ class InstancesController < ApplicationController
   # POST /instances.json
   def create
     @instance = Instance.new(params[:instance])
+    @instance.groups = params[:instance]['groups'].delete_if {|x| x == "" }
 
     respond_to do |format|
       if @instance.save
