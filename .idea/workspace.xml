@@ -56,7 +56,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="68" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.22865854">
+            <state line="6" column="47" selection-start="313" selection-end="313" vertical-scroll-proportion="0.09146342">
               <folding />
             </state>
           </provider>
@@ -65,7 +65,7 @@
       <file leaf-file-name="instance.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="505" selection-end="513" vertical-scroll-proportion="0.0">
+            <state line="5" column="8" selection-start="167" selection-end="175" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -828,7 +828,11 @@
       <created>1359566600317</created>
       <updated>1359566600317</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Initial view of the system index page.">
+      <created>1359569721666</created>
+      <updated>1359569721666</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1003,14 +1007,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="505" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="5" column="8" selection-start="167" selection-end="175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="68" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.22865854">
+        <state line="6" column="47" selection-start="313" selection-end="313" vertical-scroll-proportion="0.09146342">
           <folding />
         </state>
       </provider>
