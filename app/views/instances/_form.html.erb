@@ -1,4 +1,6 @@
 <%= javascript_include_tag "jquery.multiselect.js"%>
+
+<div class="instance_form">
 <%= semantic_form_for @instance do |f| %>
   <%= f.inputs do %>
     <%= f.input :name, :label => Time.now.year%>
@@ -15,3 +17,4 @@
     <%= f.action :cancel, :as => :link %>
   <% end %>
 <% end %>
+</div>
