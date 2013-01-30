@@ -61,9 +61,10 @@ class InstancesController < ApplicationController
     params[:instance]['groups'] = params[:instance]['groups'].delete_if {|x| x == "" }
     params[:instance]['tags'] = params[:instance]['tags'].split(",").to_ary
 
-    @instance = Instance.new(params[:instance])
+    @instance = Instance.find(params[:instance]['id'])
+
     respond_to do |format|
-      if @instance.save(@form)
+      if @instance.save(params[:instance])
        format.html { redirect_to "/instances/#{@instance.name}/show", notice: "Instance was successfully updated." }
        format.json { head :no_content }
       else
