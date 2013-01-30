@@ -3,9 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 form {
+  border-width: 2px;
   border-color: black;
   width: 500px;
   ol li label {
     color: blue;
+    width: 20%;
   }
 }
