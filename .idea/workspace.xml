@@ -4,7 +4,6 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/instances.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/instances.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/instances/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/instances/_form.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +65,7 @@
       <file leaf-file-name="instances.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/instances.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.1469148">
+            <state line="4" column="18" selection-start="199" selection-end="199" vertical-scroll-proportion="0.058765914">
               <folding />
             </state>
           </provider>
@@ -764,7 +763,11 @@
       <created>1359574543965</created>
       <updated>1359574543965</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Initial view of the system index page.">
+      <created>1359574802560</created>
+      <updated>1359574802560</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -952,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/instances.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.1469148">
+        <state line="4" column="18" selection-start="199" selection-end="199" vertical-scroll-proportion="0.058765914">
           <folding />
         </state>
       </provider>
