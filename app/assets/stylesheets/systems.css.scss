@@ -42,6 +42,12 @@ body {
 
   table.header {
     background-color: white;
+    th.first {
+      width: 30px;
+    }
+    th.labels {
+      width: 150px;
+    }
   }
 
   table.grid {
