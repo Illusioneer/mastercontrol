@@ -7,11 +7,10 @@ $(function() {
 });
 </script>
 <h1 class="time">Index of All Systems As Of: <%=Time.now%></h1>
-<%= image_tag "rails.png", :size => "15x15" %>
 
 <div id="serverlist">
 <% Instance.all.each do |system|%>
-<h5 class="servername"><div class="serverlabel"><div class="label"><p class="center"><%= system.name%></p></div><div class="label"><p class="center"><%= system.canonical%></p></div></div><br/></h5>
+<h5 class="servername"><div class="serverlabel"><div class="label"><%= image_tag system.provider, :size => "15x15" %><p class="center"><%= system.name%></p></div><div class="label"><p class="center"><%= system.canonical%></p></div></div><br/></h5>
 <div class="server">
 
 <table class="grid" width="700" border="1">
