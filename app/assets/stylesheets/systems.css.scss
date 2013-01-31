@@ -20,6 +20,7 @@ body {
       width:600px;
       max-height: 30px;
   }
+
   p.center { text-align: center }
 
   #div.serverlist {
@@ -36,6 +37,11 @@ body {
   h5.servername {
     width: 750px;
     color: blue;
+    padding: 0 0 0 0;
+  }
+
+  table.header {
+    background-color: white;
   }
 
   table.grid {
