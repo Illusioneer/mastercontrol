@@ -10,7 +10,7 @@ $(function() {
 
 <div id="serverlist">
 <% Instance.all.each do |system|%>
-<h5 class="servername" style="padding: 0 0 0 0"><table class="header" width="700" border="1"><th.first><%= image_tag system.provider, :size => "15x15" %></th><th><%= system.name%></th><th><%= system.canonical%></th></table></h5>
+<h5 class="servername" style="padding: 0 0 0 0"><table class="header" width="500" border="1"><th class="icon"><%= image_tag system.provider, :size => "15x15" %></th><th><%= system.name%></th><th><%= system.canonical%></th><th><%= system.main_ip%></th></table></h5>
 <div class="server">
 
 <table class="grid" width="700" border="1">

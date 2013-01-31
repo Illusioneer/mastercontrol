@@ -42,10 +42,11 @@ body {
 
   table.header {
     background-color: white;
-    th.first {
+    color: #616f80;
+    th.icon {
       width: 30px;
     }
-    th.labels {
+    th {
       width: 150px;
     }
   }
