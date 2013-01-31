@@ -59,9 +59,9 @@ class InstancesController < ApplicationController
   # PUT /instances/1.json
   def update
     params[:instance]['groups'] = params[:instance]['groups'].delete_if {|x| x == "" }
-    params[:instance]['tags'] = params[:instance]['tags'].split(",").to_ary
+    params[:instance]['tags'] = params[:instance]['tags'].split(",")
 
-    @instance = Instance.find(params[:instance]['id'])
+    @instance = Instance.find(params[:id])
 
     respond_to do |format|
       if @instance.save(params[:instance])
