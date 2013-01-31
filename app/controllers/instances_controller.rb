@@ -64,7 +64,7 @@ class InstancesController < ApplicationController
     @instance = Instance.find(params[:id])
 
     respond_to do |format|
-      if @instance.save(params[:instance])
+      if @instance.update_attributes(params[:instance])
        format.html { redirect_to "/instances/#{@instance.name}/show", notice: "Instance was successfully updated." }
        format.json { head :no_content }
       else
