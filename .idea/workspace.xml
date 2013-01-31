@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
@@ -48,7 +47,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="286" selection-end="286" vertical-scroll-proportion="0.18292683">
+            <state line="12" column="161" selection-start="401" selection-end="401" vertical-scroll-proportion="0.18292683">
               <folding />
             </state>
           </provider>
@@ -858,7 +857,11 @@
       <created>1359660607165</created>
       <updated>1359660607165</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Initial view of the system index page.">
+      <created>1359660769517</created>
+      <updated>1359660769517</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1046,7 +1049,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="286" selection-end="286" vertical-scroll-proportion="0.18292683">
+        <state line="12" column="161" selection-start="401" selection-end="401" vertical-scroll-proportion="0.18292683">
           <folding />
         </state>
       </provider>
