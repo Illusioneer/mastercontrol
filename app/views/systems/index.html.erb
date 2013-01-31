@@ -22,7 +22,7 @@ $(function() {
             <td width="200"><%= system.canonical%></td>
             <td width="200"><%= system.location%></td>
             <td width="200">
-              <%= Group.where(:_id.nin => system.groups).each do |group|%>
+              <% Group.where(:_id.nin => system.groups).each do |group|%>
               <%= group.groupname %>
               <% end %>
              </td>
