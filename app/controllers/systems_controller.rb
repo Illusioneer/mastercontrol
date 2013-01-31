@@ -58,8 +58,6 @@ class SystemsController < ApplicationController
   def update
     @form = params[:instance]
     @instance = Instance.find(params[:id])
-    @instance.instancegroups = params[:instance]['instancegroups'].delete_if {|x| x == "" } 
-    @instance.notingroups = params[:instance]['notingroups'].delete_if {|x| x == "" } 
 
     respond_to do |format|
       if @instance.save(@form)
