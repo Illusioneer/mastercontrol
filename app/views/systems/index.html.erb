@@ -21,7 +21,7 @@ $(function() {
             <td width="100"><%= system.name%></td>
             <td width="200"><%= system.canonical%></td>
             <td width="200"><%= system.location%></td>
-            <td width="200"><%= Group.where(:_id.nin => system.groups).all>%></td>
+            <td width="200"><%= Group.where(:_id.nin => system.groups).each {|group| p group}>%></td>
           </tr>
 
 </table>
