@@ -18,10 +18,35 @@
 </p>
 
 <p>
-  <b>Group Owner:</b>
+  <b>PROVIDER:</b>
+  <%= @instance.provider %>
+</p>
+
+<p>
+  <b>OWNERS:</b>
+  <%= @instance.owners %>
+</p>
+
+<p>
+  <b>INVOLVED GROUPS:</b>
  <%@instance.groups.each do |bsid| %>
-        <%= Group.where(:_id => bsid).count > 0 ? Group.where(:_id => bsid).first.groupname : "nope"%>
+        <%= Group.where(:_id => bsid).count > 0 ? Group.where(:_id => bsid).first.groupname : ""%>
 <% end%>
+</p>
+
+<p>
+  <b>TAGS:</b>
+ <%@instance.tags%>
+</p>
+
+<p>
+  <b>OPERATING SYSTEM:</b>
+  <%= @instance.os_type %>
+</p>
+
+<p>
+  <b>DESCRIPTION:</b>
+  <%= @instance.description %>
 </p>
 
 <%= link_to 'Edit', "/instances/#{@instance.name}/edit" %> |
