@@ -89,6 +89,8 @@ Mastercontrol::Application.routes.draw do
 
   get "api/showgroups"
 
+  get "api/lastcheck"
+
   get "dashboard/index"
 
   get "dashboard/show"

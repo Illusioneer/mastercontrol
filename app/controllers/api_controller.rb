@@ -72,8 +72,8 @@ class ApiController < ApplicationController
     end
   end
 
-  def lastcheck (servicename,hostname,statput)
-    @lastcheck = Nagios.lastcheck(servicename,hostname,statput)
+  def lastcheck
+    @lastcheck = Nagios.lastcheck(params["servicename"], params["hostname"], params["statput"])
 
     respond_to do |format|
       if @lastcheck
@@ -81,7 +81,7 @@ class ApiController < ApplicationController
         format.json { render json: @lastcheck }
       else
         @lastcheck = "Data Invalid"
-        format.html { render text: @lastcheck }
+        format.html { render text: "Noooooooooooo" }
         format.json { render json: @lastcheck }
       end
     end
