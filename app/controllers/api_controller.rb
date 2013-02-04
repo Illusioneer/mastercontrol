@@ -72,6 +72,21 @@ class ApiController < ApplicationController
     end
   end
 
+  def lastcheck (servicename,hostname,statput)
+    @lastcheck = Nagios.lastcheck(servicename,hostname,statput)
+
+    respond_to do |format|
+      if @lastcheck
+        format.html { render text: @lastcheck }
+        format.json { render json: @lastcheck }
+      else
+        @lastcheck = "Data Invalid"
+        format.html { render text: @lastcheck }
+        format.json { render json: @lastcheck }
+      end
+    end
+  end
+
   # PUT /apis/1
   # PUT /apis/1.json
   def update
