@@ -94,18 +94,10 @@ Mastercontrol::Application.routes.draw do
   get "dashboard/index"
 
   get "dashboard/show"
-
-  get "dashboard/new"
   
   get "dashboard/nagios"
 
   get "dashboard/report"
-  
-  get "dashboard/edit"
-
-  get "dashboard/destroy"
-
-  get "dashboard/update"
 
   get "dashboard/timestamp"
 

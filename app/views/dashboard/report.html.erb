@@ -31,9 +31,11 @@
 <br>
 <div id="warning" style="background-color: red; width: 200px" >START DATE MUST PRECEDE END DATE</div>
 <div>
-  <%@services.each do |service|%>
-   <%= check_box_tag service['hostname'] %>
-  <%end%>
+  <%@sites.each do |service|%>
+    <%= service['hostname']%>
+    <%= check_box_tag service['hostname'],service['hostname']%>
+  <% end %>
+
 </div>
 
 </div>
