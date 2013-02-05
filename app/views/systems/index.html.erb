@@ -39,7 +39,7 @@ $(function() {
     <div id="serverstats">
       <h5 class="servername" style="padding: 0 0 0 0"></h5>
       <div>System Status
-        <%= render 'gauge' %>
+        <%= render (:partial => "gauge", :locals => {:host => @system.name}) %>
       </div>
       <div>Disk go here</div>
 
