@@ -4,7 +4,6 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="report.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.49648947">
+            <state line="35" column="57" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.52657974">
               <folding />
             </state>
           </provider>
@@ -1056,7 +1055,11 @@
       <created>1360101708302</created>
       <updated>1360101708302</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="initial report form commit">
+      <created>1360103130848</created>
+      <updated>1360103130848</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1241,7 +1244,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.49648947">
+        <state line="35" column="57" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.52657974">
           <folding />
         </state>
       </provider>
