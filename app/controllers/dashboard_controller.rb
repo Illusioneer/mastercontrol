@@ -21,8 +21,11 @@ class DashboardController < ApplicationController
   def destroy
   end
 
-  def nagios
+  def report
+     @sites = Nagios.last.servicestatus.uniq! {|e| e["host_name"] }
+  end
 
+  def nagios
     @nagios = Nagios.last.servicestatus.sort_by { |k| k["current_state"]}
     @dump = Nagios.service_history('pub-dashboard-dev')
   end

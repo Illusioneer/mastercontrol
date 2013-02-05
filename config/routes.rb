@@ -98,6 +98,8 @@ Mastercontrol::Application.routes.draw do
   get "dashboard/new"
   
   get "dashboard/nagios"
+
+  get "dashboard/report"
   
   get "dashboard/edit"
 

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datestart" ).datepicker();
+  });
+  $(function() {
+    $( "#datestop" ).datepicker();
+  });
+
+  $(document).ready(function() {
+		setInterval( function() {
+		var startDate = new Date(document.getElementById("datestart").value);
+		var stopDate = new Date(document.getElementById("datestop").value);
+		$("#result").html($("#datestop").val());
+		if (startDate.getDate() > stopDate.getDate()) {
+		  $("#warning").show();
+		  } else {$("#warning").hide();}
+		}, 100)});
+  </script>
+</head>
+<body>
+
+<form>
+
+<div id="daterange">
+<a>Start: <input type="text" id="datestart" /></a><a>End: <input type="text" id="datestop" /></a>
+<br>
+<div id="warning" style="background-color: red; width: 200px" >START DATE MUST PRECEDE END DATE</div>
+<div>
+  <%@services.each do |service|%>
+   <%= check_box_tag service['hostname'] %>
+  <%end%>
+</div>
+
+</div>
+
+</form>
+</body>
+</html>
