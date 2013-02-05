@@ -34,7 +34,7 @@ var gauge = new Gauge({
 gauge.onready = function() {
 	setInterval( function() {
 		var rates = $.ajax({
-		  url: "http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&hostname=adproxy-dev&statput=plugin_output",
+		  url: "http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&hostname=<%= host%>&statput=plugin_output",
 		  async: false
 		  }).responseText;
 		gauge.setValue(rates);
