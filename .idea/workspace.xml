@@ -29,7 +29,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="44" selection-start="1321" selection-end="1334" vertical-scroll-proportion="0.5640244">
+            <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5640244">
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
       <file leaf-file-name="nagios.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="165" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
+            <state line="41" column="11" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1075,7 +1075,11 @@
       <created>1360169484721</created>
       <updated>1360169484721</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="initial report form commit">
+      <created>1360171666916</created>
+      <updated>1360171666916</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1241,13 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="165" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4918033">
@@ -1262,9 +1259,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="11" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="44" selection-start="1321" selection-end="1334" vertical-scroll-proportion="0.5640244">
+        <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5640244">
           <folding />
         </state>
       </provider>
