@@ -35,7 +35,7 @@ $(function() {
               </tr>
 
     </table>
-    <p><%= render (:partial => "systems/gauge", :locals => {:host => @system.name}) %></p>
+    <p><%= render :partial => "systems/gauge", :locals => {:host => @system.name} %></p>
     <div id="serverstats">
       <h5 class="servername" style="padding: 0 0 0 0"></h5>
       <div>System Status

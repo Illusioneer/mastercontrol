@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/nagios.rb" afterPath="$PROJECT_DIR$/app/models/nagios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,23 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="56" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-31.25">
-              <folding>
-                <marker date="1360081409000" expanded="true" signature="7:213" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="22:202" placeholder="{...}" />
-                <marker date="1360081409000" expanded="true" signature="55:105" placeholder="{&quot;collapsible&quot;: true...}" />
-                <marker date="1360081409000" expanded="true" signature="140:198" placeholder="{&quot;collapsible&quot;: true...}" />
-                <marker date="1360081409000" expanded="true" signature="381:1570" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="702:1555" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="751:1288" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="872:1274" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="1022:1192" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="1406:1547" placeholder="..." />
-                <marker date="1360081409000" expanded="true" signature="1478:1505" placeholder="..." />
-              </folding>
+            <state line="37" column="44" selection-start="1321" selection-end="1334" vertical-scroll-proportion="0.5640244">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,19 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-20.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nagios.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nagios.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="26" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.6">
+            <state line="40" column="165" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,13 +105,13 @@
         <option value="$PROJECT_DIR$/app/views/instances/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/api/lastcheck.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/_gauge.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
         <option value="$PROJECT_DIR$/app/models/nagios.rb" />
+        <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1095,7 +1071,11 @@
       <created>1360167183836</created>
       <updated>1360167183836</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="initial report form commit">
+      <created>1360169484721</created>
+      <updated>1360169484721</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1179,11 +1159,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/instances/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="59" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.31152648" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/instances/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="21" selection-end="41" vertical-scroll-proportion="0.030737706" />
@@ -1193,25 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="62" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.445">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-31.25">
-          <folding>
-            <marker date="1360081409000" expanded="true" signature="7:213" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="22:202" placeholder="{...}" />
-            <marker date="1360081409000" expanded="true" signature="55:105" placeholder="{&quot;collapsible&quot;: true...}" />
-            <marker date="1360081409000" expanded="true" signature="140:198" placeholder="{&quot;collapsible&quot;: true...}" />
-            <marker date="1360081409000" expanded="true" signature="381:1570" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="702:1555" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="751:1288" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="872:1274" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="1022:1192" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="1406:1547" placeholder="..." />
-            <marker date="1360081409000" expanded="true" signature="1478:1505" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1285,16 +1241,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-20.0">
+        <state line="40" column="165" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="26" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.6">
+        <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4918033">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="44" selection-end="666" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="44" selection-start="1321" selection-end="1334" vertical-scroll-proportion="0.5640244">
           <folding />
         </state>
       </provider>
