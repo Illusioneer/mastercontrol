@@ -28,5 +28,18 @@ class Nagios
     end
     return pluginoutput
   end
+
+  def self.uptime(datestart, dateend, servicename)
+    uptick = 0
+    downtick = 0
+    Nagios.each do |services|
+        services.servicestatus.each do |service|
+           service["host_name"]==servicename and service["service_description"]== "HTTP" and service["current_state"]== 0 ? uptick += 1: downtick += 1
+        end
+    end
+
+    return downtick/uptick
+
+  end
   
 end

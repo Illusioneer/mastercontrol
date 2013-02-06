@@ -4,8 +4,9 @@
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/nagios.rb" afterPath="$PROJECT_DIR$/app/models/nagios.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,16 +71,25 @@
       <file leaf-file-name="report.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="88" selection-start="1344" selection-end="1344" vertical-scroll-proportion="-25.0">
+            <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nagios.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="26" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="4" selection-start="737" selection-end="762" vertical-scroll-proportion="0.4113614">
+            <state line="31" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,7 +98,7 @@
       <file leaf-file-name="generate.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/generate.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="7" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.875">
+            <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -117,15 +127,15 @@
         <option value="$PROJECT_DIR$/app/controllers/instances_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
         <option value="$PROJECT_DIR$/app/views/instances/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
         <option value="$PROJECT_DIR$/app/views/api/lastcheck.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/_gauge.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
       </list>
     </option>
   </component>
@@ -1081,7 +1091,11 @@
       <created>1360164239221</created>
       <updated>1360164239222</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="initial report form commit">
+      <created>1360167183836</created>
+      <updated>1360167183836</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1182,13 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="722" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="56" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-31.25">
@@ -1264,23 +1271,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="88" selection-start="1344" selection-end="1344" vertical-scroll-proportion="-25.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/generate.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.875">
+        <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="4" selection-start="737" selection-end="762" vertical-scroll-proportion="0.4113614">
+        <state line="31" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-20.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.6">
           <folding />
         </state>
       </provider>

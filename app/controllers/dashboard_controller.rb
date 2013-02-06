@@ -30,16 +30,6 @@ class DashboardController < ApplicationController
     @start = params[:datestart]
     @end = params[:datestop]
 
-    @instance = Instance.new(params[:instance])
-    respond_to do |format|
-      if @instance.save
-        format.html { redirect_to "/instances", notice: "Instance was successfully created." }
-        format.json { render json: @instance, status: :created, location: @instance }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @instance.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   def nagios

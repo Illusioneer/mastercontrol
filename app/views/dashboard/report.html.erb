@@ -30,7 +30,7 @@
 <div style="width:400px">
   <%@sites.each do |service|%>
     <%= service['host_name']%>
-    <%= check_box_tag "reports",service['host_name']%>
+    <%= check_box_tag 'reports[]',service['host_name']%>
   <% end %>
 </div>
   <div><%= submit_tag 'Gen' %></div>
