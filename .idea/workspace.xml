@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/nagios.rb" afterPath="$PROJECT_DIR$/app/models/nagios.rb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5640244">
+            <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-23.125">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nagios.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nagios.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="11" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
+            <state line="39" column="42" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.5729677">
               <folding />
             </state>
           </provider>
@@ -110,8 +110,8 @@
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
       </list>
     </option>
   </component>
@@ -1079,7 +1079,11 @@
       <created>1360171666916</created>
       <updated>1360171666916</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="initial report form commit">
+      <created>1360172514252</created>
+      <updated>1360172514252</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1259,16 +1263,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="11" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
+        <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-23.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5640244">
+        <state line="39" column="42" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.5729677">
           <folding />
         </state>
       </provider>

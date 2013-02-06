@@ -37,7 +37,7 @@ class Nagios
            service["host_name"]==servicename and service["service_description"]== "HTTP" and service["current_state"]== 0 ? uptick += 1: downtick += 1
         end
     end
-
+    #returns ratio of uptime and downtimes
     return downtick/uptick
 
   end
