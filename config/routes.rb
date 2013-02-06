@@ -99,7 +99,7 @@ Mastercontrol::Application.routes.draw do
 
   get "dashboard/report"
 
-  get "dashboard/generate"
+  post "dashboard/generate"
 
   get "dashboard/timestamp"
 

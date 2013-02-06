@@ -26,7 +26,7 @@ class DashboardController < ApplicationController
   end
 
   def generate
-    @sites = params[:instance]['groups']
+    @sites = params[:reports]
     @start = params[:datestart]
     @end = params[:datestop]
 

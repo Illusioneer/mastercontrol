@@ -12,36 +12,30 @@
   });
 
   $(document).ready(function() {
-		setInterval( function() {
-		var startDate = new Date(document.getElementById("datestart").value);
-		var stopDate = new Date(document.getElementById("datestop").value);
-		$("#result").html($("#datestop").val());
-		if (startDate.getDate() > stopDate.getDate()) {
-		  $("#warning").show();
-		  } else {$("#warning").hide();}
-		}, 100)});
+                setInterval( function() {
+                var startDate = new Date(document.getElementById("datestart").value);
+                var stopDate = new Date(document.getElementById("datestop").value);
+                $("#result").html($("#datestop").val());
+                if (startDate.getDate() > stopDate.getDate()) {
+                  $("#warning").show();
+                  } else {$("#warning").hide();}
+                }, 100)});
   </script>
 </head>
 <body>
-
-<%= form_tag( { :action => :generate, }, { :method => :post }) %>
-
-<div id="daterange">
-<a>Start: <input type="text" id="datestart" /></a><a>End: <input type="text" id="datestop" /></a>
+<%= form_tag('generate') do -%>
+<a><%=text_field_tag 'datestart'%><%=text_field_tag 'datestop'%></a>
 <br>
 <div id="warning" style="background-color: red; width: 200px" >START DATE MUST PRECEDE END DATE</div>
-<div style="width:300px">
+<div style="width:400px">
   <%@sites.each do |service|%>
     <%= service['host_name']%>
     <%= check_box_tag "reports",service['host_name']%>
   <% end %>
-
-
-
 </div>
+  <div><%= submit_tag 'Gen' %></div>
+<% end -%>
 
-</div>
-
-<%= end_form_tag %>
 </body>
 </html>
+~               
