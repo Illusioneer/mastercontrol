@@ -32,7 +32,7 @@ class Nagios
   def self.uptime(datestart, dateend, servicename)
     uptick = 0
     downtick = 0
-    Nagios.each do |services|
+    Nagios.all.each do |services|
         services.servicestatus.each do |service|
            service["host_name"]==servicename and service["service_description"]== "HTTP" and service["current_state"]== 0 ? uptick += 1: downtick += 1
         end
