@@ -99,6 +99,8 @@ Mastercontrol::Application.routes.draw do
 
   get "dashboard/report"
 
+  get "dashboard/generate"
+
   get "dashboard/timestamp"
 
   match 'test' => 'application#testing'

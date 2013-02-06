@@ -24,22 +24,24 @@
 </head>
 <body>
 
-<form>
+<%= form_tag( { :action => :generate, }, { :method => :post }) %>
 
 <div id="daterange">
 <a>Start: <input type="text" id="datestart" /></a><a>End: <input type="text" id="datestop" /></a>
 <br>
 <div id="warning" style="background-color: red; width: 200px" >START DATE MUST PRECEDE END DATE</div>
-<div>
+<div style="width:300px">
   <%@sites.each do |service|%>
     <%= service['host_name']%>
-    <%= check_box_tag service['host_name'],service['host_name']%>
+    <%= check_box_tag "reports",service['host_name']%>
   <% end %>
 
-</div>
+
 
 </div>
 
-</form>
+</div>
+
+<%= end_form_tag %>
 </body>
 </html>
