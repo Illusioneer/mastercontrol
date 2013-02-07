@@ -1,3 +1,3 @@
-class Agent
-  include Mongoid::Document
+class Agent < ActiveRecord::Base
+  establish_connection DB2_CONF
 end

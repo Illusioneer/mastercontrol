@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/nagios.rb" afterPath="$PROJECT_DIR$/app/models/nagios.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agent.rb" afterPath="$PROJECT_DIR$/app/models/agent.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +31,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-23.125">
+            <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,8 +40,18 @@
       <file leaf-file-name="_gauge.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.875">
-              <folding />
+            <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1360099838000" expanded="true" signature="61:1249" placeholder="..." />
+                <marker date="1360099838000" expanded="true" signature="100:866" placeholder="{&quot;renderTo&quot;: 'gauge'...}" />
+                <marker date="1360099838000" expanded="true" signature="395:617" placeholder="[...]" />
+                <marker date="1360099838000" expanded="true" signature="634:864" placeholder="{&quot;plate&quot;: '#222'...}" />
+                <marker date="1360099838000" expanded="true" signature="897:1137" placeholder="{...}" />
+                <marker date="1360099838000" expanded="true" signature="924:1127" placeholder="{...}" />
+                <marker date="1360099838000" expanded="true" signature="947:1084" placeholder="{&quot;url&quot;: &quot;http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&amp;hostname=&lt;%= host%&gt;&amp;statput=plugin_output&quot;...}" />
+                <marker date="1360099838000" expanded="true" signature="1182:1239" placeholder="{...}" />
+                <marker date="1360099838000" expanded="true" signature="1203:1235" placeholder="{&quot;width&quot;: 100...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,10 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nagios.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.4995103">
+            <state line="27" column="55" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agent.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/agent.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="100" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="68" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.91">
               <folding />
             </state>
           </provider>
@@ -74,7 +104,16 @@
       <file leaf-file-name="generate.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/generate.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.875">
+            <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nagios.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="101" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/instances.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/instances/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/systems_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/instances_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/systems.css.scss" />
@@ -112,6 +148,9 @@
         <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/nagios.rb" />
+        <option value="$PROJECT_DIR$/app/models/agent.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -173,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -425,19 +465,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="Errors" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: mastercontrol">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -556,6 +595,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -587,13 +633,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -1087,19 +1126,22 @@
       <created>1360172553595</created>
       <updated>1360172553595</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="initial report form commit">
+      <created>1360181617927</created>
+      <updated>1360181617927</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1604" height="1172" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805158" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.3262477" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1975547" sideWeight="0.955243" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2001287" sideWeight="0.955243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.33086875" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809612" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -1109,6 +1151,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283721" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31805158" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1171,77 +1214,56 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/instances/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="21" selection-end="41" vertical-scroll-proportion="0.030737706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="62" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="52" selection-start="72" selection-end="72" vertical-scroll-proportion="0.030737706">
-          <folding />
-        </state>
+        <state line="2" column="52" selection-start="72" selection-end="72" vertical-scroll-proportion="0.030737706" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/systems_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="137" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-32.4">
-          <folding />
-        </state>
+        <state line="79" column="137" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-32.4" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="451" selection-end="451" vertical-scroll-proportion="0.3227459">
-          <folding />
-        </state>
+        <state line="21" column="32" selection-start="451" selection-end="451" vertical-scroll-proportion="0.3227459" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.875">
-          <folding />
+        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360099838000" expanded="true" signature="61:1249" placeholder="..." />
+            <marker date="1360099838000" expanded="true" signature="100:866" placeholder="{&quot;renderTo&quot;: 'gauge'...}" />
+            <marker date="1360099838000" expanded="true" signature="395:617" placeholder="[...]" />
+            <marker date="1360099838000" expanded="true" signature="634:864" placeholder="{&quot;plate&quot;: '#222'...}" />
+            <marker date="1360099838000" expanded="true" signature="897:1137" placeholder="{...}" />
+            <marker date="1360099838000" expanded="true" signature="924:1127" placeholder="{...}" />
+            <marker date="1360099838000" expanded="true" signature="947:1084" placeholder="{&quot;url&quot;: &quot;http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&amp;hostname=&lt;%= host%&gt;&amp;statput=plugin_output&quot;...}" />
+            <marker date="1360099838000" expanded="true" signature="1182:1239" placeholder="{...}" />
+            <marker date="1360099838000" expanded="true" signature="1203:1235" placeholder="{&quot;width&quot;: 100...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/instances_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="912" selection-end="1514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="0" selection-start="912" selection-end="1514" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="80" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.225">
-          <folding />
-        </state>
+        <state line="100" column="80" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/generate.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.875">
+        <state line="3" column="74" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1255,9 +1277,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/report.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4918033">
-          <folding />
-        </state>
+        <state line="32" column="54" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.4918033" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
@@ -1269,14 +1289,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-23.125">
+        <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.4995103">
+        <state line="45" column="101" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agent.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="100" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="55" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="68" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.91">
           <folding />
         </state>
       </provider>

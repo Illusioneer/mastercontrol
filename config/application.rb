@@ -55,5 +55,9 @@ module Mastercontrol
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    ENV['ENV'] ||= 'development'
+    db_conf = YAML::load(File.open(File.join(APP_PATH,'config','database.yml')))
+    DB2_CONF = db_conf["db2"][ENV['ENV']]
   end
 end
