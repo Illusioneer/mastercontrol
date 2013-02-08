@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agent.rb" afterPath="$PROJECT_DIR$/app/models/agent.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
@@ -37,47 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_gauge.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_gauge.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1360099838000" expanded="true" signature="61:1249" placeholder="..." />
-                <marker date="1360099838000" expanded="true" signature="100:866" placeholder="{&quot;renderTo&quot;: 'gauge'...}" />
-                <marker date="1360099838000" expanded="true" signature="395:617" placeholder="[...]" />
-                <marker date="1360099838000" expanded="true" signature="634:864" placeholder="{&quot;plate&quot;: '#222'...}" />
-                <marker date="1360099838000" expanded="true" signature="897:1137" placeholder="{...}" />
-                <marker date="1360099838000" expanded="true" signature="924:1127" placeholder="{...}" />
-                <marker date="1360099838000" expanded="true" signature="947:1084" placeholder="{&quot;url&quot;: &quot;http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&amp;hostname=&lt;%= host%&gt;&amp;statput=plugin_output&quot;...}" />
-                <marker date="1360099838000" expanded="true" signature="1182:1239" placeholder="{...}" />
-                <marker date="1360099838000" expanded="true" signature="1203:1235" placeholder="{&quot;width&quot;: 100...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="instance.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/instance.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="85" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="92" selection-start="2708" selection-end="2708" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="50" selection-start="513" selection-end="513" vertical-scroll-proportion="0.405">
+            <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.045135405">
               <folding />
             </state>
           </provider>
@@ -129,10 +92,10 @@
         <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/nagios.rb" />
-        <option value="$PROJECT_DIR$/app/models/agent.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/models/agent.rb" />
       </list>
     </option>
   </component>
@@ -1124,7 +1087,11 @@
       <created>1360357419787</created>
       <updated>1360357419787</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Adding postgres support">
+      <created>1360357964984</created>
+      <updated>1360357964984</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1209,28 +1176,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="451" selection-end="451" vertical-scroll-proportion="0.3227459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1360099838000" expanded="true" signature="61:1249" placeholder="..." />
-            <marker date="1360099838000" expanded="true" signature="100:866" placeholder="{&quot;renderTo&quot;: 'gauge'...}" />
-            <marker date="1360099838000" expanded="true" signature="395:617" placeholder="[...]" />
-            <marker date="1360099838000" expanded="true" signature="634:864" placeholder="{&quot;plate&quot;: '#222'...}" />
-            <marker date="1360099838000" expanded="true" signature="897:1137" placeholder="{...}" />
-            <marker date="1360099838000" expanded="true" signature="924:1127" placeholder="{...}" />
-            <marker date="1360099838000" expanded="true" signature="947:1084" placeholder="{&quot;url&quot;: &quot;http://mcp.hcpprod.com:88/api/lastcheck?servicename=MEMORY&amp;hostname=&lt;%= host%&gt;&amp;statput=plugin_output&quot;...}" />
-            <marker date="1360099838000" expanded="true" signature="1182:1239" placeholder="{...}" />
-            <marker date="1360099838000" expanded="true" signature="1203:1235" placeholder="{&quot;width&quot;: 100...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/instances_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="912" selection-end="1514" vertical-scroll-proportion="0.0" />
@@ -1249,13 +1194,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="68" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/agent.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="103" selection-end="103" vertical-scroll-proportion="0.06">
           <folding />
         </state>
       </provider>
@@ -1302,9 +1240,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="71" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="92" selection-start="2708" selection-end="2708" vertical-scroll-proportion="0.0">
+        <state line="57" column="0" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1316,9 +1261,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="513" selection-end="513" vertical-scroll-proportion="0.405">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agent.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="33" selection-end="33" vertical-scroll-proportion="0.014691479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.045135405">
           <folding />
         </state>
       </provider>
