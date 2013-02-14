@@ -44,5 +44,4 @@ class Nagios
     return downtick/uptick
 
   end
-  
 end
