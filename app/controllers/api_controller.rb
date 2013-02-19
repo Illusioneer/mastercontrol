@@ -73,7 +73,7 @@ class ApiController < ApplicationController
   end
 
   def lastcheck
-    @lastcheck = Nagios.lastcheck(params["servicename"], params["hostname"], params["statput"])
+    @lastcheck = Servicestatus.uptime(params["range"].days.ago, Time.now, params["service"], params["hostname"])
 
     respond_to do |format|
       if @lastcheck
