@@ -1,6 +1,4 @@
-class Hoststatus
-  include Mongoid::Document
-  #field
-  #field
-  embedded_in :nagios, :inverse_of => :hoststatuses
+class Hoststatus < ActiveRecord::Base
+  attr_accessible :current_event_id, :current_state, :host_name, :hostdata, :nagiostimeid
+
 end
