@@ -31,17 +31,17 @@ var <%= host + "gauge"%> = new Gauge({
 	}
 });
 
-gauge.onready = function() {
+<%= host + "gauge"%>.onready = function() {
 	setInterval( function() {
 		var rates = $.ajax({
-          url: "http://mcp.hcpprod.com:888/api/lastcheck?service=HTTP&host=<%= host%>&range=7"
+          url: "http://mcp.hcpprod.com:888/api/lastcheck?service=HTTP&host=<%= host%>&range=7",
 		  async: false
 		  }).responseText;
 		gauge.setValue(rates);
 	}, 1000);
 };
 
-gauge.draw();
+<%= host + "gauge"%>.draw();
 window.onresize= function() {
 gauge.updateConfig({
 	width  : 100,

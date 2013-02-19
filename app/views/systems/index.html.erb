@@ -17,7 +17,7 @@ $(function() {
 <% Instance.all.each do |system|%>
 <h5 class="servername" style="padding: 0 0 0 0"><table class="header" width="500" border="1"><th class="icon"><%= image_tag system.provider, :size => "15x15" %></th><th><%= system.name%></th><th><%= system.canonical%></th><th><%= system.main_ip%></th></table></h5>
 <div class="server">
-
+  <p><%= render :partial => "systems/gauge", :locals => {:host => system.name} %></p>
     <table class="grid" width="700" border="1">
         <th>Location</th>
         <th>OS Type</th>
@@ -35,7 +35,7 @@ $(function() {
               </tr>
 
     </table>
-    <p><%= render :partial => "systems/gauge", :locals => {:host => system.name} %></p>
+
     <div id="serverstats">
       <h5 class="servername" style="padding: 0 0 0 0"></h5>
       <div>System Status
