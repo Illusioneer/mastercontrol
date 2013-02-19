@@ -73,7 +73,7 @@ class ApiController < ApplicationController
   end
 
   def lastcheck
-    @lastcheck = Servicestatus.uptime(params["range"].days.ago, Time.now, params["service"], params["hostname"])
+    @lastcheck = Servicestatus.uptime(params["range"].to_i.days.ago, Time.now, params["service"], params["hostname"])
 
     respond_to do |format|
       if @lastcheck
