@@ -73,14 +73,13 @@ class ApiController < ApplicationController
   end
 
   def lastcheck
-    @lastcheck = Servicestatus.uptime(params["range"].to_i.days.ago, Time.now, params["service"], params["hostname"])
+    @lastcheck = Servicestatus.uptime(params["range"].to_i.days.ago, Time.now, params["service"], params["host"])
 
     respond_to do |format|
       if @lastcheck
         format.html { render text: @lastcheck }
         format.json { render json: @lastcheck }
       else
-        @lastcheck = "Data Invalid"
         format.html { render text: "Noooooooooooo" }
         format.json { render json: @lastcheck }
       end
