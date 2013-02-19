@@ -37,7 +37,7 @@ var <%= host + "_gauge"%> = new Gauge({
           url: "http://mcp.hcpprod.com:888/api/lastcheck?service=HTTP&host=<%= host%>&range=7",
 		  async: false
 		  }).responseText;
-		gauge.setValue(rates);
+        <%= host + "_gauge"%>.setValue(rates);
 	}, 1000);
 };
 

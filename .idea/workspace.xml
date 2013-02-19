@@ -38,7 +38,7 @@
       <file leaf-file-name="_gauge.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.8095952">
+            <state line="39" column="29" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.8770615">
               <folding />
             </state>
           </provider>
@@ -1127,7 +1127,11 @@
       <created>1361312774241</created>
       <updated>1361312774241</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Lastcheck call to the database.">
+      <created>1361312928318</created>
+      <updated>1361312928318</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1311,7 +1315,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.8095952">
+        <state line="39" column="29" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.8770615">
           <folding />
         </state>
       </provider>
