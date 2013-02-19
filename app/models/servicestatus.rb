@@ -5,7 +5,7 @@ class Servicestatus < ActiveRecord::Base
 
     uptick = Servicestatus.where(:host_name => hostname).where(:service_description => servicename).where(:nagiostimeid => datestart..dateend).where(:current_state => 0).count
     totaltick = Servicestatus.where(:host_name => hostname).where(:service_description => servicename).where(:nagiostimeid => datestart..dateend).count
-    return uptick/totaltick
+    return (uptick.fdiv(totaltick.to_i)).*100
 
   end
 
