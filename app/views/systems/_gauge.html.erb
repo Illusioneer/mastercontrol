@@ -1,7 +1,7 @@
 <canvas id="gauge"></canvas>
 <div id="console"></div>
 <script>
-var <%= host + "gauge"%> = new Gauge({
+var <%= host + "_gauge"%> = new Gauge({
 	renderTo    : 'gauge',
 	width       : 100,
 	height      : 100,
@@ -31,7 +31,7 @@ var <%= host + "gauge"%> = new Gauge({
 	}
 });
 
-<%= host + "gauge"%>.onready = function() {
+<%= host + "_gauge"%>.onready = function() {
 	setInterval( function() {
 		var rates = $.ajax({
           url: "http://mcp.hcpprod.com:888/api/lastcheck?service=HTTP&host=<%= host%>&range=7",
@@ -41,9 +41,9 @@ var <%= host + "gauge"%> = new Gauge({
 	}, 1000);
 };
 
-<%= host + "gauge"%>.draw();
+<%= host + "_gauge"%>.draw();
 window.onresize= function() {
-gauge.updateConfig({
+<%= host + "_gauge"%>.updateConfig({
 	width  : 100,
 	height : 100
 });
