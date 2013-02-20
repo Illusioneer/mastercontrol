@@ -1,8 +1,8 @@
-<canvas id="gauge"></canvas>
+<canvas id="<%= host + '_gauge'%>"></canvas>
 <div id="console"></div>
 <script>
-var <%= host + "_gauge"%> = new Gauge({
-	renderTo    : 'gauge',
+var <%= host + '_gauge'%> = new Gauge({
+	renderTo    : "<%= host + '_gauge'%>",
 	width       : 100,
 	height      : 100,
 	glow        : true,
@@ -38,7 +38,7 @@ var <%= host + "_gauge"%> = new Gauge({
 		  async: false
 		  }).responseText;
         <%= host + "_gauge"%>.setValue(rates);
-	}, 1000);
+	}, 100000);
 };
 
 <%= host + "_gauge"%>.draw();
