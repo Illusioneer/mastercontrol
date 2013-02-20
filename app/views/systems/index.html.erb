@@ -11,28 +11,18 @@ $(function() {
 });
 </script>
 <script src="https://raw.github.com/Mikhus/canv-gauge/master/gauge.js"></script>
-<h1 class="time">Index of All Systems As Of: <%=Time.now%></h1>
+<h4 class="time">Index of All Systems As Of: <%=Time.now%></h4>
 
 <div id="serverlist">
-<% Instance.all.each do |system|%>
+<% Servicestatus.all_hosts.each do |system|%>
 <h5 class="servername" style="padding: 0 0 0 0"><table class="header" width="500" border="1"><th class="icon"><%= image_tag system.provider, :size => "15x15" %></th><th><%= system.name%></th><th><%= system.canonical%></th><th><%= system.main_ip%></th></table></h5>
 <div class="server">
-  <p><%= render :partial => "systems/gauge", :locals => {:host => system.name} %></p>
     <table class="grid" width="700" border="1">
         <th>Location</th>
         <th>OS Type</th>
         <th>Tags</th>
         <th>Description</th>
-              <tr>
-                <td width="150"><%= system.location%></td>
-                <td width="150"><%= system.os_type%></td>
-                <td width="200">
-                  <% Group.where(:_id.nin => system.groups).each do |group|%>
-                  <%= group.groupname %>
-                  <% end %>
-                 </td>
-                <td width="150"><%= system.description%></td>
-              </tr>
+
 
     </table>
 
