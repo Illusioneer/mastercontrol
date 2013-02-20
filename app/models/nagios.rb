@@ -4,9 +4,6 @@ class Nagios
   #field  :machine,  :type => String
   field  :timestamp,  :type => Integer
   #field  :nagiosdata, :type =>  Hash
-  embeds_many :programstatuses
-  embeds_many :servicestatuses
-  embeds_many :hoststatuses
 
   def self.service_history(servicename)
     dib = Array.new

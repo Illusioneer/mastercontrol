@@ -2,7 +2,9 @@ class SystemsController < ApplicationController
   # GET /instances
   # GET /instances.json
   def index
-    @instances = Instance.all
+    @instances ||=Instance.all
+
+
 
     respond_to do |format|
       format.html # index.html.erb

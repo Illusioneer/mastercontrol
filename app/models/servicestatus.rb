@@ -9,4 +9,8 @@ class Servicestatus < ActiveRecord::Base
 
   end
 
+  def self.all_hosts
+    Rails.cache.fetch('Servicestatus.all') { select(:host_name).uniq }
+  end
+
 end

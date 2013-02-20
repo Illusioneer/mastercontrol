@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fedd47-6d0d-4af6-b41d-386bd0855a8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/systems/_gauge.html.erb" afterPath="$PROJECT_DIR$/app/views/systems/_gauge.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/systems_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/systems_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/nagios.rb" afterPath="$PROJECT_DIR$/app/models/nagios.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/servicestatus.rb" afterPath="$PROJECT_DIR$/app/models/servicestatus.rb" />
     </list>
     <ignored path="mastercontrol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,24 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="85" selection-start="789" selection-end="789" vertical-scroll-proportion="-1.5102041">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_gauge.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.62025315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="api_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,28 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lastcheck.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/lastcheck.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="35" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nagios.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="64" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="servicestatus.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="servicestatus.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/servicestatus.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
+            <state line="12" column="36" selection-start="658" selection-end="658" vertical-scroll-proportion="0.27108434">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="systems_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/systems_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,15 +68,6 @@
         <entry file="file://$PROJECT_DIR$/app/models/hoststatus.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="68" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/generate.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/report.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -141,13 +106,14 @@
         <option value="$PROJECT_DIR$/app/models/programstatus.rb" />
         <option value="$PROJECT_DIR$/app/models/hoststatus.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/dashboard.css.scss" />
-        <option value="$PROJECT_DIR$/app/models/servicestatus.rb" />
         <option value="$PROJECT_DIR$/app/views/api/lastcheck.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/_gauge.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/nagios.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/systems_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/servicestatus.rb" />
       </list>
     </option>
   </component>
@@ -1135,7 +1101,11 @@
       <created>1361312987659</created>
       <updated>1361312987659</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Lastcheck call to the database.">
+      <created>1361373201471</created>
+      <updated>1361373201472</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1222,11 +1192,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/wincheck.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1282,30 +1247,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/lastcheck.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="64" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/servicestatus.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="65" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+        <state line="34" column="124" selection-start="979" selection-end="979" vertical-scroll-proportion="-12.583333">
           <folding />
         </state>
       </provider>
@@ -1317,9 +1261,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/_gauge.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/lastcheck.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.62025315">
+        <state line="0" column="35" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/nagios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="136" selection-start="525" selection-end="525" vertical-scroll-proportion="0.3323486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="65" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/systems_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/servicestatus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="658" selection-end="658" vertical-scroll-proportion="0.27108434">
           <folding />
         </state>
       </provider>
